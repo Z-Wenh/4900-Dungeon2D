@@ -3,7 +3,7 @@ guid: bb5b2ede7f64ba14a9efb95afec65106
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 12
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
@@ -75,6 +77,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -87,6 +90,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -99,6 +103,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -111,6 +116,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -1114,56 +1120,55 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      atlas_walls_low-16x16_43: 154821585
-      atlas_walls_low-16x16_31: 112797744
-      atlas_walls_low-16x16_5: 1366190460
-      atlas_walls_low-16x16_24: -1941636523
-      atlas_walls_low-16x16_32: 1080049712
-      atlas_walls_low-16x16_26: -651086688
-      atlas_walls_low-16x16_19: 2092969436
-      atlas_walls_low-16x16_42: 1737394567
-      atlas_walls_low-16x16_13: -483441311
-      atlas_walls_low-16x16_29: -2048221896
-      atlas_walls_low-16x16_27: -1750982827
-      atlas_walls_low-16x16_25: -1084869215
-      atlas_walls_low-16x16_1: -1818311113
-      atlas_walls_low-16x16_11: 1695284110
-      atlas_walls_low-16x16_41: -736212855
-      atlas_walls_low-16x16_37: -1935505195
-      atlas_walls_low-16x16_10: 392752664
-      atlas_walls_low-16x16_9: -1348781752
-      atlas_walls_low-16x16_16: 2044934266
-      atlas_walls_low-16x16_12: -1570541429
-      atlas_walls_low-16x16_34: 1407609161
-      atlas_walls_low-16x16_28: -1090591681
-      atlas_walls_low-16x16_46: 767621734
-      atlas_walls_low-16x16_35: 108351127
-      atlas_walls_low-16x16_21: 972452060
-      atlas_walls_low-16x16_40: -1664381055
-      atlas_walls_low-16x16_44: 2019590610
-      atlas_walls_low-16x16_2: 2130408690
-      atlas_walls_low-16x16_3: -2022123420
-      atlas_walls_low-16x16_38: -1699247915
-      atlas_walls_low-16x16_8: -392638321
-      atlas_walls_low-16x16_45: -2081600746
-      atlas_walls_low-16x16_18: 1769862508
-      atlas_walls_low-16x16_20: 656103419
-      atlas_walls_low-16x16_7: 1688457496
-      atlas_walls_low-16x16_23: 1880579145
-      atlas_walls_low-16x16_30: -1997626533
       atlas_walls_low-16x16_0: -1938717667
-      atlas_walls_low-16x16_22: -1572607430
-      atlas_walls_low-16x16_36: 519956025
+      atlas_walls_low-16x16_1: -1818311113
+      atlas_walls_low-16x16_10: 392752664
+      atlas_walls_low-16x16_11: 1695284110
+      atlas_walls_low-16x16_12: -1570541429
+      atlas_walls_low-16x16_13: -483441311
       atlas_walls_low-16x16_14: 2097249762
-      atlas_walls_low-16x16_4: -1665730232
-      atlas_walls_low-16x16_17: 1133828174
-      atlas_walls_low-16x16_39: 1480046917
-      atlas_walls_low-16x16_6: -2055887382
       atlas_walls_low-16x16_15: 72747580
+      atlas_walls_low-16x16_16: 2044934266
+      atlas_walls_low-16x16_17: 1133828174
+      atlas_walls_low-16x16_18: 1769862508
+      atlas_walls_low-16x16_19: 2092969436
+      atlas_walls_low-16x16_2: 2130408690
+      atlas_walls_low-16x16_20: 656103419
+      atlas_walls_low-16x16_21: 972452060
+      atlas_walls_low-16x16_22: -1572607430
+      atlas_walls_low-16x16_23: 1880579145
+      atlas_walls_low-16x16_24: -1941636523
+      atlas_walls_low-16x16_25: -1084869215
+      atlas_walls_low-16x16_26: -651086688
+      atlas_walls_low-16x16_27: -1750982827
+      atlas_walls_low-16x16_28: -1090591681
+      atlas_walls_low-16x16_29: -2048221896
+      atlas_walls_low-16x16_3: -2022123420
+      atlas_walls_low-16x16_30: -1997626533
+      atlas_walls_low-16x16_31: 112797744
+      atlas_walls_low-16x16_32: 1080049712
       atlas_walls_low-16x16_33: 789611889
-  spritePackingTag: 
+      atlas_walls_low-16x16_34: 1407609161
+      atlas_walls_low-16x16_35: 108351127
+      atlas_walls_low-16x16_36: 519956025
+      atlas_walls_low-16x16_37: -1935505195
+      atlas_walls_low-16x16_38: -1699247915
+      atlas_walls_low-16x16_39: 1480046917
+      atlas_walls_low-16x16_4: -1665730232
+      atlas_walls_low-16x16_40: -1664381055
+      atlas_walls_low-16x16_41: -736212855
+      atlas_walls_low-16x16_42: 1737394567
+      atlas_walls_low-16x16_43: 154821585
+      atlas_walls_low-16x16_44: 2019590610
+      atlas_walls_low-16x16_45: -2081600746
+      atlas_walls_low-16x16_46: 767621734
+      atlas_walls_low-16x16_5: 1366190460
+      atlas_walls_low-16x16_6: -2055887382
+      atlas_walls_low-16x16_7: 1688457496
+      atlas_walls_low-16x16_8: -392638321
+      atlas_walls_low-16x16_9: -1348781752
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
