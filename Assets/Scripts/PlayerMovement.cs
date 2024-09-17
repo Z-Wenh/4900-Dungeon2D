@@ -24,22 +24,23 @@ public class PlayerMovement : MonoBehaviour{
     }
 
     private void Run() {
-        //determine if player's velocity is above 0
-        bool playerHasHorizontalSpeed = Mathf.Abs(myRigidBody.velocity.x) > Mathf.Epsilon;
+        //determine if player's velocity is above 0 
+        //will switch player animation from idle to running if player is moving
+        bool playerHasSpeed = Mathf.Abs(myRigidBody.velocity.x) > Mathf.Epsilon || Mathf.Abs(myRigidBody.velocity.y) > Mathf.Epsilon;
 
         //responsible for controlling player movement velocity
         Vector2 playerVelocity = new Vector2(moveInput.x * playerSpeed, moveInput.y * playerSpeed);
         myRigidBody.velocity = playerVelocity;
 
         //responsible for switching the animation of player from idle to running
-        myAnimator.SetBool("isRunning", playerHasHorizontalSpeed);
+        myAnimator.SetBool("isRunning", playerHasSpeed);
     }
     private void FlipSprite() {
         //determine if player's velocity is above 0
-        bool playerHasHorizontalSpeed = Mathf.Abs(myRigidBody.velocity.x) > Mathf.Epsilon;
+        bool playerHasSpeed = Mathf.Abs(myRigidBody.velocity.x) > Mathf.Epsilon;
 
         //if player is moving, change scale to (+/-) to flip the player sprite
-        if(playerHasHorizontalSpeed)
+        if(playerHasSpeed)
             transform.localScale = new Vector2 (Mathf.Sign(myRigidBody.velocity.x), 1f);
     }
 }
