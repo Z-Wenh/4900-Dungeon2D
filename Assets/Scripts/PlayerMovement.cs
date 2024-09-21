@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour{
         myAnimator = GetComponent<Animator>();
     }
 
-    void Update() {
+    void FixedUpdate() {
         Run();
         FlipSprite();
     }
