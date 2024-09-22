@@ -11,10 +11,11 @@ GameObject:
   - component: {fileID: 1394263477378242275}
   - component: {fileID: 8540842366161624244}
   - component: {fileID: 3274971954058398631}
-  - component: {fileID: 5834159525351520551}
   - component: {fileID: 6939481375987005287}
   - component: {fileID: 5125464700676277610}
   - component: {fileID: 4764421879197735187}
+  - component: {fileID: 5834159525351520551}
+  - component: {fileID: 3780657751163412062}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -76,7 +77,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -917973011
-  m_SortingLayer: 1
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 709899030, guid: 08cacc06f4eb9a04a8838a6b054dfab6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -116,19 +117,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &5834159525351520551
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1848301774102267666}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ba4c0c5cc4e5da49932958fd0f0f9dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerSpeed: 5
 --- !u!95 &6939481375987005287
 Animator:
   serializedVersion: 5
@@ -225,3 +213,48 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.7543558, y: 0.43016505}
   m_EdgeRadius: 0
+--- !u!114 &5834159525351520551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848301774102267666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ba4c0c5cc4e5da49932958fd0f0f9dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerSpeed: 5
+--- !u!114 &3780657751163412062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848301774102267666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 610b5ccc061b1c443ba7e4e4a71795b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _level: 0
+  _containExperience: 0
+  _currentHealth: 0
+  _maximumHealth: 0
+  _attackDamage: 0
+  OnDied:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

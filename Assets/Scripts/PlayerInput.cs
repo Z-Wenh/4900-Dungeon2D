@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerMovement : MonoBehaviour{
+public class PlayerInput : MonoBehaviour{
     private Vector2 moveInput;
     Rigidbody2D myRigidBody;
     Animator myAnimator;
@@ -35,12 +35,15 @@ public class PlayerMovement : MonoBehaviour{
         //responsible for switching the animation of player from idle to running
         myAnimator.SetBool("isRunning", playerHasSpeed);
     }
+
     private void FlipSprite() {
         //determine if player's velocity is above 0
         bool playerHasSpeed = Mathf.Abs(myRigidBody.velocity.x) > Mathf.Epsilon;
 
         //if player is moving, change scale to (+/-) to flip the player sprite
-        if(playerHasSpeed)
+        if(playerHasSpeed) {
             transform.localScale = new Vector2 (Mathf.Sign(myRigidBody.velocity.x), 1f);
+        }
     }
+
 }
