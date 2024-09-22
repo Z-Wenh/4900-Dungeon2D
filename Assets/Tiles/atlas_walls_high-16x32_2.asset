@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: atlas_walls_high-16x32_2
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -1141024834, guid: c65e4f4412aa528488171b5c65d2f89c, type: 3}
+  m_Sprite: {fileID: 1971875467, guid: 9472338eca9679748afef1a1759af6ae, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
