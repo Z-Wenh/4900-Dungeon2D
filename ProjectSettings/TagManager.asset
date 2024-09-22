@@ -17,7 +17,7 @@ TagManager:
   - Background
   - Door
   - Fountain
-  - 
+  - Enemies
   - 
   - 
   - 
@@ -50,6 +50,9 @@ TagManager:
     locked: 0
   - name: AboveGround
     uniqueID: 1584648193
+    locked: 0
+  - name: Enemies
+    uniqueID: 4210480513
     locked: 0
   - name: Player
     uniqueID: 3376994285
