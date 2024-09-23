@@ -9,3 +9,6 @@ Fallen Ruins is a 2D top down RPG game with the aspect of being a Dungeon Crawle
 Game created using the Unity game enging and scripts written in C#.  
 I don't plan for this game to be super extravagant since this is my first time creating a game, but I really hope I can turn this game into something I would feel proud of, and share with the public and friends.   
 Although not currently set up, this game will be posted on itch.io in the future.
+
+# Assets 
+Sprite Sheet Used: [sprites by 0x72](https://0x72.itch.io/dungeontileset-ii)
