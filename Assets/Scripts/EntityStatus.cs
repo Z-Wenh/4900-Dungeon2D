@@ -9,6 +9,7 @@ public class EntityStatus : MonoBehaviour {
     [SerializeField] private float _containExperience;
     [SerializeField] private float _currentHealth;
     [SerializeField] private float _maximumHealth;
+    [SerializeField] private float _defense;
 
     public float RemainingHealthPercentage {
         get {

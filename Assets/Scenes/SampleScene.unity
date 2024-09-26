@@ -364,7 +364,7 @@ Transform:
   m_GameObject: {fileID: 442399184}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.45, y: 0.19, z: -5}
+  m_LocalPosition: {x: 0.4, y: 0.1, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -475,7 +475,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.45, y: 0.19, z: -5}
+  m_LocalPosition: {x: 0.4, y: 0.1, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10249,6 +10249,11 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!4 &1107813411 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1376569450769302410, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
+  m_PrefabInstance: {fileID: 7550291182665027441}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1221733263 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1394263477378242275, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
@@ -10368,17 +10373,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1854647994 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5834159525351520551, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
-  m_PrefabInstance: {fileID: 7550291182665027441}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ba4c0c5cc4e5da49932958fd0f0f9dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2081529567 stripped
@@ -10539,11 +10533,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1394263477378242275, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.45
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1394263477378242275, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.19
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 1394263477378242275, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10581,34 +10575,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 3780657751163412062, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
-      propertyPath: _currentHealth
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 3780657751163412062, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
-      propertyPath: _maximumHealth
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 3780657751163412062, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
-      propertyPath: OnDied.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 3780657751163412062, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
-      propertyPath: OnDied.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+    - target: {fileID: 5834159525351520551, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
+      propertyPath: movePoint
       value: 
-      objectReference: {fileID: 1854647994}
-    - target: {fileID: 3780657751163412062, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
-      propertyPath: OnDied.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: set_enabled
+      objectReference: {fileID: 1107813411}
+    - target: {fileID: 5834159525351520551, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
+      propertyPath: enemyCollider.m_Bits
+      value: 2048
       objectReference: {fileID: 0}
-    - target: {fileID: 3780657751163412062, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
-      propertyPath: OnDied.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.Behaviour, UnityEngine
+    - target: {fileID: 5834159525351520551, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
+      propertyPath: movePointCollider.m_Bits
+      value: 128
       objectReference: {fileID: 0}
-    - target: {fileID: 3780657751163412062, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
-      propertyPath: OnDied.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
+    - target: {fileID: 7837997571270033413, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
