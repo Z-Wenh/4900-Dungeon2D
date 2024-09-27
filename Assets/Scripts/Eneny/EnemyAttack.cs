@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyAttack : MonoBehaviour {
     [SerializeField] private float _attackDamage;
     [SerializeField] private bool _myTurnToAttack;
+    EntityStatus myStatus;
 
     private void OnCollisionEnter2D(Collision2D collision) {
         _myTurnToAttack = false;

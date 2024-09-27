@@ -12,9 +12,12 @@ GameObject:
   - component: {fileID: 3461297017044708803}
   - component: {fileID: 4221871690850778791}
   - component: {fileID: 4896914704571340786}
+  - component: {fileID: 3733340052340805841}
+  - component: {fileID: 7743797185141071295}
+  - component: {fileID: 4814398318574365486}
   m_Layer: 11
   m_Name: big_snail
-  m_TagString: Untagged
+  m_TagString: Enemies
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2868902777705686696}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.8032386, y: -0.21108758, z: 0.005494793}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -136,7 +139,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.03841877, y: -0.18556589}
@@ -152,3 +155,50 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.69823456, y: 0.7538682}
   m_EdgeRadius: 0
+--- !u!114 &3733340052340805841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2868902777705686696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1b2ba62183c97d4880c7d870ad89b80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _attackDamage: 10
+  _myTurnToAttack: 0
+--- !u!114 &7743797185141071295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2868902777705686696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 112d93da2fbc3de4e92ff19adce1a485, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _level: 0
+  _containExperience: 0
+  _currentHealth: 100
+  _maximumHealth: 100
+  _defense: 0
+  _attackDamage: 0
+  onDamaged:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &4814398318574365486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2868902777705686696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ef4a932331f80748a2eba3081bbdac3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
