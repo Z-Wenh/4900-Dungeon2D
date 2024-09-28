@@ -15,10 +15,13 @@ GameObject:
   - component: {fileID: 6939481375987005287}
   - component: {fileID: 5125464700676277610}
   - component: {fileID: 5834159525351520551}
-  - component: {fileID: 3780657751163412062}
+  - component: {fileID: 1923021031182943461}
+  - component: {fileID: 3784103983379015840}
+  - component: {fileID: 9201767662327867664}
+  - component: {fileID: 2273183732166728287}
   m_Layer: 6
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -227,16 +230,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movePoint: {fileID: 1376569450769302410}
-  attackPoint: {fileID: 0}
   movePointCollider:
     serializedVersion: 2
     m_Bits: 128
-  enemyLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  playerSpeed: 5
-  _attackField: 0.3
---- !u!114 &3780657751163412062
+--- !u!114 &1923021031182943461
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -245,7 +242,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1848301774102267666}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 610b5ccc061b1c443ba7e4e4a71795b4, type: 3}
+  m_Script: {fileID: 11500000, guid: 112d93da2fbc3de4e92ff19adce1a485, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _level: 0
@@ -253,7 +250,62 @@ MonoBehaviour:
   _currentHealth: 100
   _maximumHealth: 100
   _defense: 0
-  _attackDamage: 0
+  OnDamaged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 9201767662327867664}
+        m_TargetAssemblyTypeName: PlayerInvincibility, Assembly-CSharp
+        m_MethodName: StartInvincibility
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnDied:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &3784103983379015840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848301774102267666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ef4a932331f80748a2eba3081bbdac3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &9201767662327867664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848301774102267666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92aeceded9d685c4dadc997e42ed0806, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _invincibilityDuration: 1
+--- !u!114 &2273183732166728287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848301774102267666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 845df569d1104b44883445619f80ca9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _damageAmount: 0
 --- !u!1 &7837997571270033413
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,38 +10,38 @@ public class EntityStatus : MonoBehaviour {
     [SerializeField] private float _currentHealth;
     public float _maximumHealth;
     [SerializeField] private float _defense;
-    [SerializeField] private float _attackDamage;
 
     public float RemainingHealthPercentage {
         get {
             return _currentHealth / _maximumHealth;
         }
     }
-    public UnityEvent onDamaged;
 
-    public bool isInvincible{ get; set; }
+    public UnityEvent OnDamaged;
+    public UnityEvent OnDied;
 
-    public void takeDamage(float damageAmount) {
-        if (_currentHealth == 0) {
-            Debug.Log("Enemy Died");
-            Die();
-        }
-        else {
-            onDamaged.Invoke();
-        }
+    public bool IsInvincible{ get; set; }
 
-        if (isInvincible) {
+    public void TakeDamage(float damageAmount) {
+        if (IsInvincible) {
             return;
         }
 
         _currentHealth -= damageAmount;
 
-        if (_currentHealth < 0) {
+        if(_currentHealth < 0) {
             _currentHealth = 0;
+        }
+
+        if(_currentHealth == 0) {
+            OnDied.Invoke();
+        }
+        else {
+            OnDamaged.Invoke();
         }
     }
 
-    public void addHealth(float healAmount) {
+    public void AddHealth(float healAmount) {
         if (_currentHealth == _maximumHealth) {
             return ;
         }
@@ -53,16 +53,7 @@ public class EntityStatus : MonoBehaviour {
         }
     }
 
-    public float getAttack() {
-        return _attackDamage;
-    }
-
-    void Die() {
-        GetComponent<Collider2D>().enabled = false;
-        this.enabled = false;
-    }
-
-    public float getHealth() {
+    public float GetHealth() {
         return _currentHealth;
     }
 }

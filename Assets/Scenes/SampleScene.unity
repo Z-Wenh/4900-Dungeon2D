@@ -515,24 +515,6 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!1 &716200111 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2868902777705686696, guid: 599937efcc3d79a4aa07014bcfc845b5, type: 3}
-  m_PrefabInstance: {fileID: 7176814744029515913}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &716200112
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 716200111}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 391a518e30752004e86ffc3acce7c57b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _invincibilityDuration: 1
 --- !u!1 &747544454
 GameObject:
   m_ObjectHideFlags: 0
@@ -10331,24 +10313,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &2081529567 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8158857975991385771, guid: 8d756e56ee5919e4492a9d9d9401594f, type: 3}
-  m_PrefabInstance: {fileID: 2232991866158272269}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2081529568
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2081529567}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 391a518e30752004e86ffc3acce7c57b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _invincibilityDuration: 1
 --- !u!1001 &2232991866158272269
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10401,45 +10365,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: small_snail
       objectReference: {fileID: 0}
-    - target: {fileID: 8158857975991385771, guid: 8d756e56ee5919e4492a9d9d9401594f, type: 3}
-      propertyPath: m_Layer
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 9156863330847392398, guid: 8d756e56ee5919e4492a9d9d9401594f, type: 3}
-      propertyPath: onDamaged.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9156863330847392398, guid: 8d756e56ee5919e4492a9d9d9401594f, type: 3}
-      propertyPath: onDamaged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9156863330847392398, guid: 8d756e56ee5919e4492a9d9d9401594f, type: 3}
-      propertyPath: onDamaged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 2081529568}
-    - target: {fileID: 9156863330847392398, guid: 8d756e56ee5919e4492a9d9d9401594f, type: 3}
-      propertyPath: onDamaged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 9156863330847392398, guid: 8d756e56ee5919e4492a9d9d9401594f, type: 3}
-      propertyPath: onDamaged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: startInvincibility
-      objectReference: {fileID: 0}
-    - target: {fileID: 9156863330847392398, guid: 8d756e56ee5919e4492a9d9d9401594f, type: 3}
-      propertyPath: onDamaged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: EnemyInvincibility, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 9156863330847392398, guid: 8d756e56ee5919e4492a9d9d9401594f, type: 3}
-      propertyPath: onDamaged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8158857975991385771, guid: 8d756e56ee5919e4492a9d9d9401594f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2081529568}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d756e56ee5919e4492a9d9d9401594f, type: 3}
 --- !u!1001 &7176814744029515913
 PrefabInstance:
@@ -10452,38 +10381,6 @@ PrefabInstance:
     - target: {fileID: 2868902777705686696, guid: 599937efcc3d79a4aa07014bcfc845b5, type: 3}
       propertyPath: m_Name
       value: big_snail
-      objectReference: {fileID: 0}
-    - target: {fileID: 2868902777705686696, guid: 599937efcc3d79a4aa07014bcfc845b5, type: 3}
-      propertyPath: m_Layer
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 7743797185141071295, guid: 599937efcc3d79a4aa07014bcfc845b5, type: 3}
-      propertyPath: onDamaged.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7743797185141071295, guid: 599937efcc3d79a4aa07014bcfc845b5, type: 3}
-      propertyPath: onDamaged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7743797185141071295, guid: 599937efcc3d79a4aa07014bcfc845b5, type: 3}
-      propertyPath: onDamaged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 716200112}
-    - target: {fileID: 7743797185141071295, guid: 599937efcc3d79a4aa07014bcfc845b5, type: 3}
-      propertyPath: onDamaged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7743797185141071295, guid: 599937efcc3d79a4aa07014bcfc845b5, type: 3}
-      propertyPath: onDamaged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: startInvincibility
-      objectReference: {fileID: 0}
-    - target: {fileID: 7743797185141071295, guid: 599937efcc3d79a4aa07014bcfc845b5, type: 3}
-      propertyPath: onDamaged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: EnemyInvincibility, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 7743797185141071295, guid: 599937efcc3d79a4aa07014bcfc845b5, type: 3}
-      propertyPath: onDamaged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8800993092755996995, guid: 599937efcc3d79a4aa07014bcfc845b5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10528,10 +10425,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2868902777705686696, guid: 599937efcc3d79a4aa07014bcfc845b5, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 716200112}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 599937efcc3d79a4aa07014bcfc845b5, type: 3}
 --- !u!1001 &7550291182665027441
 PrefabInstance:
@@ -10585,104 +10479,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 5125464700676277610, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5834159525351520551, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5834159525351520551, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
-      propertyPath: attackPoint
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5834159525351520551, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
-      propertyPath: attackPointPrefab
-      value: 
-      objectReference: {fileID: 5842754649567248639, guid: 2e3f1638a2a5f0a4fbf640ddd84859eb, type: 3}
-    - target: {fileID: 5834159525351520551, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
-      propertyPath: enemyLayer.m_Bits
-      value: 2048
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3780657751163412062, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1848301774102267666, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7550291182665027445}
-    - targetCorrespondingSourceObject: {fileID: 1848301774102267666, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7550291182665027444}
-    - targetCorrespondingSourceObject: {fileID: 1848301774102267666, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7550291182665027443}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
---- !u!1 &7550291182665027442 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1848301774102267666, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
-  m_PrefabInstance: {fileID: 7550291182665027441}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &7550291182665027443
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7550291182665027442}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92aeceded9d685c4dadc997e42ed0806, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _invincibilityDuration: 1.5
---- !u!114 &7550291182665027444
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7550291182665027442}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ef4a932331f80748a2eba3081bbdac3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &7550291182665027445
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7550291182665027442}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 112d93da2fbc3de4e92ff19adce1a485, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _level: 0
-  _containExperience: 0
-  _currentHealth: 0
-  _maximumHealth: 0
-  _defense: 0
-  _attackDamage: 0
-  onDamaged:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7550291182665027443}
-        m_TargetAssemblyTypeName: PlayerInvincibility, Assembly-CSharp
-        m_MethodName: startInvincibility
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

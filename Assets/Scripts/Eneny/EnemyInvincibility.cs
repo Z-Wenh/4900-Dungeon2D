@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class EnemyInvincibility : MonoBehaviour {
     [SerializeField] private float _invincibilityDuration;
-    InvincibilityController _invincibilityController;
+    private InvincibilityController _invincibilityController;
 
     void Awake() {
         _invincibilityController = GetComponent<InvincibilityController>();
     }
 
-    public void startInvincibility() {
-        _invincibilityController.StarInvincibility(_invincibilityDuration);
-
+    public void StartInvincibility() {
+        _invincibilityController.StartInvincibility(_invincibilityDuration);
     }
 }

@@ -3,19 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class InvincibilityController : MonoBehaviour {
-    private EntityStatus entityStatus;
+    private EntityStatus _entityStatus;
 
     private void Awake() {
-        entityStatus = GetComponent<EntityStatus>();
+        _entityStatus = GetComponent<EntityStatus>();
     }
 
-    public void StarInvincibility(float invincibilityDuration) {
+    public void StartInvincibility(float invincibilityDuration) {
         StartCoroutine(InvincibilityCoroutine(invincibilityDuration));
     }
 
     private IEnumerator InvincibilityCoroutine(float invincibilityDuration) {
-        entityStatus.isInvincible = true;
+        _entityStatus.IsInvincible = true;
         yield return new WaitForSeconds(invincibilityDuration);
-        entityStatus.isInvincible = false;
+        _entityStatus.IsInvincible = false;
     }
 }

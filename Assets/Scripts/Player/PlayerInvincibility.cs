@@ -6,10 +6,11 @@ public class PlayerInvincibility : MonoBehaviour {
     [SerializeField] private float _invincibilityDuration;
     private InvincibilityController _invincibilityController;
 
-    void Awake() {
+    private void Awake() {
         _invincibilityController = GetComponent<InvincibilityController>();
     }
-    public void startInvincibility() {
-        _invincibilityController.StarInvincibility(_invincibilityDuration);
+
+    public void StartInvincibility() {
+        _invincibilityController.StartInvincibility(_invincibilityDuration);
     }
 }
