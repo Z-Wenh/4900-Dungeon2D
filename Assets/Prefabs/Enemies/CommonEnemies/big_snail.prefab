@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7743797185141071295}
   - component: {fileID: 4814398318574365486}
   - component: {fileID: 6236536877811451114}
+  - component: {fileID: 818048548162766974}
   m_Layer: 11
   m_Name: big_snail
   m_TagString: Enemy
@@ -227,3 +228,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _invincibilityDuration: 1
+--- !u!114 &818048548162766974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2868902777705686696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1b2ba62183c97d4880c7d870ad89b80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _attackDamage: 0
+  _levelScale: 1

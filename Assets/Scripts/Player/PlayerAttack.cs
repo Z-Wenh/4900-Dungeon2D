@@ -11,10 +11,13 @@ public class PlayerAttack : MonoBehaviour {
         _attackDamage = 20;
     }
     void Update() {
-        if(_isColliding && _enemyStatus != null) {
-            Debug.Log("hit an:" + _enemyStatus);
+        if(_isColliding && (_enemyStatus != null)) {
             _enemyStatus.TakeDamage(_attackDamage);
         }
+    }
+
+    void IncreaseAttackDamage(float dmgAmount) {
+        _attackDamage += dmgAmount;
     }
 
     void OnCollisionEnter2D(Collision2D other) {
