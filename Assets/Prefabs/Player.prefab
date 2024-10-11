@@ -245,11 +245,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 112d93da2fbc3de4e92ff19adce1a485, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _level: 0
+  _entityLevel: 0
   _containExperience: 0
   _currentHealth: 100
   _maximumHealth: 100
   _defense: 0
+  _popupDamagePrefab: {fileID: 0}
+  popupText: {fileID: 0}
   OnDamaged:
     m_PersistentCalls:
       m_Calls:
@@ -292,7 +294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92aeceded9d685c4dadc997e42ed0806, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _invincibilityDuration: 1
+  _invincibilityDuration: 1.3
 --- !u!114 &2273183732166728287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -305,7 +307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 845df569d1104b44883445619f80ca9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damageAmount: 0
+  _attackDamage: 0
 --- !u!1 &7837997571270033413
 GameObject:
   m_ObjectHideFlags: 0

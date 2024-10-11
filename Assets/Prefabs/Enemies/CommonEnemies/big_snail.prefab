@@ -168,11 +168,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 112d93da2fbc3de4e92ff19adce1a485, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _level: 0
+  _entityLevel: 0
   _containExperience: 0
   _currentHealth: 100
   _maximumHealth: 100
   _defense: 0
+  _popupDamagePrefab: {fileID: 7132546357488902286, guid: ed6167c2ebd3ff84c8da023cc2046b2b, type: 3}
+  popupText: {fileID: 4268472015666294751, guid: ed6167c2ebd3ff84c8da023cc2046b2b, type: 3}
   OnDamaged:
     m_PersistentCalls:
       m_Calls:
