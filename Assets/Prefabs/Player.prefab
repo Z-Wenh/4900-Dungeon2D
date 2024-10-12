@@ -252,6 +252,7 @@ MonoBehaviour:
   _defense: 0
   _popupDamagePrefab: {fileID: 8253097460064326840, guid: ef4be44083fb5924cb83c4341674b1b7, type: 3}
   popupText: {fileID: 4398707630921356607, guid: ef4be44083fb5924cb83c4341674b1b7, type: 3}
+  healthBar: {fileID: 0}
   OnDamaged:
     m_PersistentCalls:
       m_Calls:

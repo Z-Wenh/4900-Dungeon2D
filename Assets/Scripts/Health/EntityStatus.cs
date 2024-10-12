@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 using TMPro;
-using UnityEngine.UIElements;
 
 public class EntityStatus : MonoBehaviour {
     [SerializeField] private int _entityLevel;
@@ -14,24 +13,22 @@ public class EntityStatus : MonoBehaviour {
     [SerializeField] private float _defense;
     [SerializeField] private GameObject _popupDamagePrefab;
     [SerializeField] private TMP_Text popupText;
-
-    public float RemainingHealthPercentage {
-        get {
-            return _currentHealth / _maximumHealth;
-        }
-    }
+    public bool IsInvincible{ get; set; }
+    public HealthBar healthBar;
 
     public UnityEvent OnDamaged;
     public UnityEvent OnDied;
 
-    public bool IsInvincible{ get; set; }
-
+    void Awake() {
+        healthBar.SetMaxHealth(_maximumHealth);
+    }
     public void TakeDamage(float damageAmount) {
         if (IsInvincible) {
             return;
         }
 
         _currentHealth -= damageAmount;
+        healthBar.SetHealth(_currentHealth);
 
         if(_currentHealth < 0) {
             _currentHealth = 0;
@@ -45,7 +42,7 @@ public class EntityStatus : MonoBehaviour {
             popupText.text = damageAmount.ToString();
             Debug.Log(gameObject + "has" + transform.position);
             GameObject popUpDamage = Instantiate(_popupDamagePrefab, transform.position, Quaternion.identity);
-            popUpDamage.GetComponent<RectTransform>().anchoredPosition = new Vector2(transform.position.x, transform.position.y + 1.8f);
+            popUpDamage.GetComponent<RectTransform>().anchoredPosition = new Vector2(transform.position.x, transform.position.y + 1.5f);
         }
     }
 
@@ -59,9 +56,5 @@ public class EntityStatus : MonoBehaviour {
         if (_currentHealth > _maximumHealth) {
             _currentHealth = _maximumHealth;
         }
-    }
-
-    public float GetHealth() {
-        return _currentHealth;
     }
 }
