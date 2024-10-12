@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.UIElements;
 
 public class EntityStatus : MonoBehaviour {
     [SerializeField] private int _entityLevel;
@@ -42,8 +43,9 @@ public class EntityStatus : MonoBehaviour {
         else {
             OnDamaged.Invoke();
             popupText.text = damageAmount.ToString();
-            Instantiate(_popupDamagePrefab, transform.localPosition, Quaternion.identity);
-            
+            Debug.Log(gameObject + "has" + transform.position);
+            GameObject popUpDamage = Instantiate(_popupDamagePrefab, transform.position, Quaternion.identity);
+            popUpDamage.GetComponent<RectTransform>().anchoredPosition = new Vector2(transform.position.x, transform.position.y + 1.8f);
         }
     }
 

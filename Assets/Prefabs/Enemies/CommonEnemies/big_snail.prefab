@@ -143,10 +143,10 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.03841877, y: -0.18556589}
+  m_Offset: {x: -0.03841877, y: 0.39925998}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0}
     oldSize: {x: 1, y: 1.125}
     newSize: {x: 1, y: 1.125}
     adaptiveTilingThreshold: 0.5
@@ -154,7 +154,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.69823456, y: 0.7538682}
+  m_Size: {x: 0.69823456, y: 0.8226713}
   m_EdgeRadius: 0
 --- !u!114 &7743797185141071295
 MonoBehaviour:
@@ -173,8 +173,8 @@ MonoBehaviour:
   _currentHealth: 100
   _maximumHealth: 100
   _defense: 0
-  _popupDamagePrefab: {fileID: 7132546357488902286, guid: ed6167c2ebd3ff84c8da023cc2046b2b, type: 3}
-  popupText: {fileID: 4268472015666294751, guid: ed6167c2ebd3ff84c8da023cc2046b2b, type: 3}
+  _popupDamagePrefab: {fileID: 8253097460064326840, guid: ef4be44083fb5924cb83c4341674b1b7, type: 3}
+  popupText: {fileID: 4398707630921356607, guid: ef4be44083fb5924cb83c4341674b1b7, type: 3}
   OnDamaged:
     m_PersistentCalls:
       m_Calls:
