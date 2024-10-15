@@ -10,5 +10,7 @@ Game created using the Unity game enging and scripts written in C#.
 I don't plan for this game to be super extravagant since this is my first time creating a game, but I really hope I can turn this game into something I would feel proud of, and share with the public and friends.   
 Although not currently set up, this game will be posted on itch.io in the future.
 
-# Assets 
+# Links & Assets 
 Sprite Sheet Used: [sprites by 0x72](https://0x72.itch.io/dungeontileset-ii)
+
+Notion: https://www.notion.so/Fallen-Ruins-fb34945596f6412193b87a49ad084bd6?pvs=4
