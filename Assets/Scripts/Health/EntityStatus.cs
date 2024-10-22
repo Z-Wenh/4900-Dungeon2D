@@ -15,7 +15,6 @@ public class EntityStatus : MonoBehaviour {
     [SerializeField] private TMP_Text popupText;
     public bool IsInvincible{ get; set; }
     public HealthBar healthBar;
-
     public UnityEvent OnDamaged;
     public UnityEvent OnDied;
 
