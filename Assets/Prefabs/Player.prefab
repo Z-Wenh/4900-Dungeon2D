@@ -245,13 +245,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 112d93da2fbc3de4e92ff19adce1a485, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _entityLevel: 0
-  _containExperience: 0
-  _currentHealth: 100
-  _maximumHealth: 100
-  _defense: 0
   _popupDamagePrefab: {fileID: 8253097460064326840, guid: ef4be44083fb5924cb83c4341674b1b7, type: 3}
   popupText: {fileID: 4398707630921356607, guid: ef4be44083fb5924cb83c4341674b1b7, type: 3}
+  _entityLevel: 1
+  _currentHealth: 100
+  _containExperience: 0
+  _maximumHealth: 100
+  _defense: 0
   healthBar: {fileID: 0}
   OnDamaged:
     m_PersistentCalls:
@@ -308,7 +308,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 845df569d1104b44883445619f80ca9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _attackDamage: 0
+  _attackDamage: 50
+  experienceController: {fileID: 0}
 --- !u!1 &7837997571270033413
 GameObject:
   m_ObjectHideFlags: 0

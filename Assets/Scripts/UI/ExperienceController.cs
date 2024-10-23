@@ -2,29 +2,43 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class ExperienceController : MonoBehaviour {
-    private int _level;
+    public int _level;
     private float _expMultiplier;
-    private float _currentMaxExp;
+    [SerializeField] private float _currentMaxExp;
+    [SerializeField] private float _currentExp;
     public Slider slider;
+    public UnityEvent OnLevelUp;
     
-    public void SetInitialMaxExp(float maxExp) {
+    public void SetPlayerInitialMaxExp(float maxExp) {
         _level = 1;
         slider.maxValue = maxExp;
+        _currentExp = 0f;
         _currentMaxExp = maxExp;
-        _expMultiplier = 0.4f * maxExp; 
+        _expMultiplier = 0.05f * maxExp; 
         slider.value = 0f;
     }
 
     public void IncreaseExp(float amountExp) {
+        _currentExp += amountExp;
         slider.value += amountExp;
+        if(slider.value == _currentMaxExp) {
+            LevelUp();
+            OnLevelUp.Invoke();
+        }
+    }
+
+    public float GetCurrentMaxExp() {
+        return _currentMaxExp;
     }
 
     public void LevelUp() {
-        slider.maxValue = _currentMaxExp * _expMultiplier + _level;
+        _currentExp = _currentExp % _currentMaxExp;
+        slider.maxValue = Mathf.Floor(_currentMaxExp * _expMultiplier + _level);
         _currentMaxExp = slider.maxValue;
-        slider.value = 0f;
+        slider.value = _currentExp;
         _level ++;  
     }
 }
