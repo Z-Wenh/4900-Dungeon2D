@@ -11,7 +11,7 @@ public class PlayerAttack : MonoBehaviour {
     private bool _isColliding;
 
     void Awake() {
-        _attackDamage = 50;
+        _attackDamage = 20;
         experienceController.SetPlayerInitialMaxExp(_initialMaxExperience);
     }
     void Update() {
@@ -20,7 +20,7 @@ public class PlayerAttack : MonoBehaviour {
         }
     }
 
-    void IncreaseAttackDamage(float dmgAmount) {
+    public void IncreaseAttackDamage(float dmgAmount) {
         _attackDamage += dmgAmount;
     }
 

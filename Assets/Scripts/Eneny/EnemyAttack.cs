@@ -9,7 +9,7 @@ public class EnemyAttack : MonoBehaviour {
     private bool _isColliding;
     
     void Awake() {
-        _attackDamage = 10 * _levelScale;
+        _attackDamage = 4 * _levelScale;
     }
 
     void Update() {
