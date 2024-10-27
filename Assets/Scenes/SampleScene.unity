@@ -13509,6 +13509,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: big_snail
       objectReference: {fileID: 0}
+    - target: {fileID: 3461297017044708803, guid: 599937efcc3d79a4aa07014bcfc845b5, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3461297017044708803, guid: 599937efcc3d79a4aa07014bcfc845b5, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3461297017044708803, guid: 599937efcc3d79a4aa07014bcfc845b5, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8501369418679159281, guid: 599937efcc3d79a4aa07014bcfc845b5, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -13622,6 +13634,22 @@ PrefabInstance:
       propertyPath: experienceController
       value: 
       objectReference: {fileID: 1978276868}
+    - target: {fileID: 8540842366161624244, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8540842366161624244, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8540842366161624244, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8540842366161624244, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
