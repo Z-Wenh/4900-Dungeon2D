@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -286,7 +286,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeonui.v1_22
+      name: dungeonui.v1_2
       rect:
         serializedVersion: 2
         x: 24
@@ -481,10 +481,9 @@ TextureImporter:
       dungeonui.v1_17: -1930248689
       dungeonui.v1_18: -336695544
       dungeonui.v1_19: -831782779
-      dungeonui.v1_2: -495136078
+      dungeonui.v1_2: -1592074748
       dungeonui.v1_20: 374083535
       dungeonui.v1_21: 731588595
-      dungeonui.v1_22: -1592074748
       dungeonui.v1_23: 1994274657
       dungeonui.v1_24: -1257339810
       dungeonui.v1_25: 443620933

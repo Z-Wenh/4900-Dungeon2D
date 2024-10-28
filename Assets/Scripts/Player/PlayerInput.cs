@@ -6,6 +6,8 @@ using UnityEngine.InputSystem;
 public class PlayerInput : MonoBehaviour{
     private Vector2 _moveInput;
     private bool _canMove;
+    private bool _horizontalMovementDown;
+    private bool _verticalMovementDown;
     public Transform movePoint;
     public LayerMask movePointCollider;
     Rigidbody2D myRigidBody;
@@ -36,7 +38,7 @@ public class PlayerInput : MonoBehaviour{
 
             //Utilize an invisible pointer that determines where the player object can move to.
             //Ensures that player can only move either horizontally or vertically, never diagonally.
-            transform.position = Vector3.MoveTowards(transform.position, movePoint.position, playerSpeed * Time.deltaTime);
+            
             bool collideWithHorizontalWall = Physics2D.OverlapCircle(movePoint.position + new Vector3(_moveInput.x, 0f, 0f), 0.2f, movePointCollider);
             bool collideWithVerticalWall = Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, _moveInput.y, 0f), 0.2f, movePointCollider);
 
@@ -44,10 +46,12 @@ public class PlayerInput : MonoBehaviour{
                 if(Mathf.Abs(_moveInput.x) == 1f && !collideWithHorizontalWall) {
                     movePoint.position += new Vector3(_moveInput.x, 0f, 0f);
                 }
-                else if(Mathf.Abs(_moveInput.y) == 1f && !collideWithVerticalWall) {
-                    movePoint.position += new Vector3(0f, _moveInput.y, 0f);
+
+                if(Mathf.Abs(_moveInput.y) == 1f && !collideWithVerticalWall) {
+                    movePoint.position += new Vector3(0f, _moveInput.y, 0f); 
                 }
             }
+            transform.position = Vector3.MoveTowards(transform.position, movePoint.position, playerSpeed * Time.deltaTime);
 
             //if player is moving, change object scale to (+/-) to flip the player sprite
             if(playerHasSpeed) {
