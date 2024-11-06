@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 3784103983379015840}
   - component: {fileID: 9201767662327867664}
   - component: {fileID: 2273183732166728287}
+  - component: {fileID: 5782103507925592173}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -81,7 +82,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -917973011
-  m_SortingLayer: 5
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: 709899030, guid: 08cacc06f4eb9a04a8838a6b054dfab6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -270,7 +271,19 @@ MonoBehaviour:
         m_CallState: 2
   OnDied:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5782103507925592173}
+        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: EndScreen
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &3784103983379015840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -310,6 +323,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _attackDamage: 50
   experienceController: {fileID: 0}
+--- !u!114 &5782103507925592173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848301774102267666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44db8884ebd3cb342851411ee23c310c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7837997571270033413
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,5 +8,4 @@ public class ChangeScene : MonoBehaviour {
     public void LoadScene(String name) {
         SceneManager.LoadScene(name);
     }
-
 }
