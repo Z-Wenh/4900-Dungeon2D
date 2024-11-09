@@ -28,6 +28,8 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler {
 
     void Start() {
         _inventoryManager = GameObject.Find("InventoryCanvas").GetComponent<InventoryManager>();
+        selectedShader.SetActive(false);
+        selectionPanel.SetActive(false);
     }
 
     public void AddItem(string itemName, Sprite itemSprite, string itemDescription) {
