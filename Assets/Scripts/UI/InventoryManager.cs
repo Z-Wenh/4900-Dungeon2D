@@ -7,7 +7,8 @@ public class InventoryManager : MonoBehaviour {
     public GameObject PlayerHUD;
     private bool menuActivated;
     public ItemSlot[] itemSlot;
-
+    public GameItem[] gameItems;
+    
     void Start() {
         InventoryMenu.SetActive(false);
         menuActivated = false;
@@ -34,9 +35,17 @@ public class InventoryManager : MonoBehaviour {
         menuActivated = false;
     }
 
+    public void UseItem(string itemName) {
+        for(int i = 0 ; i < gameItems.Length ; i++) {
+            if(gameItems[i].itemName == itemName) {
+                gameItems[i].UseItem();
+            }
+        }
+    }
+
     public void AddItem(string itemName, Sprite itemSprite, string itemDescription) {
-        for(int i = 0 ; i < itemSlot.Length ; i++) {
-            if(itemSlot[i].isFull == false) {
+        for(int i = itemSlot.Length - 1 ; i >= 0 ; i--) {
+            if(itemSlot[i].hasItem == false) {
                 itemSlot[i].AddItem(itemName, itemSprite, itemDescription);
                 return;
             }
@@ -46,6 +55,7 @@ public class InventoryManager : MonoBehaviour {
     public void DeselectAllSlots() {
         for(int i = 0 ; i < itemSlot.Length; i++) {
             itemSlot[i].selectedShader.SetActive(false);
+            itemSlot[i].selectionPanel.SetActive(false);
             itemSlot[i].currentItemSelected = false;
         }
     }

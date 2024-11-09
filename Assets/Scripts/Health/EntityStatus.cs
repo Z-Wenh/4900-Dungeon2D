@@ -50,7 +50,7 @@ public class EntityStatus : MonoBehaviour {
         }
 
         _currentHealth += healAmount;
-
+        healthBar.SetHealth(_currentHealth);
         if (_currentHealth > _maximumHealth) {
             _currentHealth = _maximumHealth;
         }

@@ -157,11 +157,11 @@ TextureImporter:
         serializedVersion: 2
         x: 16
         y: 332
-        width: 39
+        width: 40
         height: 24
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 6, y: 7, z: 5, w: 8}
+      border: {x: 7, y: 7, z: 6, w: 8}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -178,11 +178,11 @@ TextureImporter:
         serializedVersion: 2
         x: 64
         y: 333
-        width: 39
+        width: 40
         height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 5, y: 4, z: 5, w: 5}
+      border: {x: 6, y: 5, z: 6, w: 6}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -203,7 +203,7 @@ TextureImporter:
         height: 24
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 6, y: 6, z: 6, w: 6}
+      border: {x: 7, y: 7, z: 7, w: 7}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -434,7 +434,7 @@ TextureImporter:
         height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 3, y: 3, z: 3, w: 3}
+      border: {x: 5, y: 6, z: 4, w: 6}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -478,6 +478,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       dungeonui.v1_0: 1498450821
+      dungeonui.v1_1: -1321884150
       dungeonui.v1_10: 1058480899
       dungeonui.v1_100: 1314582470
       dungeonui.v1_101: -960976997
