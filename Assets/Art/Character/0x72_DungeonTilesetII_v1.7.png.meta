@@ -186,7 +186,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_DungeonTilesetII_v1.7_27
+      name: Weapon_ShortSword
       rect:
         serializedVersion: 2
         x: 288
@@ -207,7 +207,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_DungeonTilesetII_v1.7_28
+      name: Weapon_RustySword
       rect:
         serializedVersion: 2
         x: 304
@@ -228,7 +228,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_DungeonTilesetII_v1.7_29
+      name: Weapon_NormalSword
       rect:
         serializedVersion: 2
         x: 320
@@ -249,7 +249,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_DungeonTilesetII_v1.7_30
+      name: Weapon_ExcellentSword
       rect:
         serializedVersion: 2
         x: 336
@@ -375,7 +375,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_DungeonTilesetII_v1.7_82
+      name: Weapon_Club
       rect:
         serializedVersion: 2
         x: 320
@@ -396,7 +396,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_DungeonTilesetII_v1.7_83
+      name: Weapon_Mace
       rect:
         serializedVersion: 2
         x: 336
@@ -753,7 +753,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_DungeonTilesetII_v1.7_134
+      name: Weapon_Katana
       rect:
         serializedVersion: 2
         x: 288
@@ -900,7 +900,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_DungeonTilesetII_v1.7_184
+      name: Weapon_SilverMachete
       rect:
         serializedVersion: 2
         x: 288
@@ -921,7 +921,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_DungeonTilesetII_v1.7_185
+      name: Weapon_ButcherKnife
       rect:
         serializedVersion: 2
         x: 304
@@ -942,7 +942,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_DungeonTilesetII_v1.7_186
+      name: Weapon_Rapier
       rect:
         serializedVersion: 2
         x: 320
@@ -963,7 +963,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_DungeonTilesetII_v1.7_187
+      name: Weapon_StraightSword
       rect:
         serializedVersion: 2
         x: 336
@@ -2559,7 +2559,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_DungeonTilesetII_v1.7_490
+      name: Normal Health Potion
       rect:
         serializedVersion: 2
         x: 288
@@ -2584,7 +2584,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_DungeonTilesetII_v1.7_491
+      name: Normal Defense Potion
       rect:
         serializedVersion: 2
         x: 304
@@ -2609,7 +2609,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_DungeonTilesetII_v1.7_492
+      name: Normal Poison Potion
       rect:
         serializedVersion: 2
         x: 320
@@ -2634,7 +2634,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_DungeonTilesetII_v1.7_493
+      name: Normal Experience Potion
       rect:
         serializedVersion: 2
         x: 336
@@ -2806,7 +2806,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_DungeonTilesetII_v1.7_518
+      name: Lesser Health Potion
       rect:
         serializedVersion: 2
         x: 288
@@ -2831,11 +2831,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_DungeonTilesetII_v1.7_519
+      name: Lesser Defense Potion
       rect:
         serializedVersion: 2
         x: 304
-        y: 143
+        y: 144
         width: 16
         height: 16
       alignment: 0
@@ -2856,7 +2856,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_DungeonTilesetII_v1.7_520
+      name: Lesser Poison Potion
       rect:
         serializedVersion: 2
         x: 320
@@ -2881,7 +2881,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_DungeonTilesetII_v1.7_521
+      name: Lesser Experience Potion
       rect:
         serializedVersion: 2
         x: 336
@@ -3888,7 +3888,6 @@ TextureImporter:
       0x72_DungeonTilesetII_v1.7_131: 1759349844
       0x72_DungeonTilesetII_v1.7_132: 1258206127
       0x72_DungeonTilesetII_v1.7_133: -384668497
-      0x72_DungeonTilesetII_v1.7_134: -2105749389
       0x72_DungeonTilesetII_v1.7_135: 691359678
       0x72_DungeonTilesetII_v1.7_136: -404023706
       0x72_DungeonTilesetII_v1.7_137: -870785447
@@ -3941,10 +3940,6 @@ TextureImporter:
       0x72_DungeonTilesetII_v1.7_181: 1462065030
       0x72_DungeonTilesetII_v1.7_182: 1953468069
       0x72_DungeonTilesetII_v1.7_183: 1490901057
-      0x72_DungeonTilesetII_v1.7_184: 1827566174
-      0x72_DungeonTilesetII_v1.7_185: -567701576
-      0x72_DungeonTilesetII_v1.7_186: -1753559880
-      0x72_DungeonTilesetII_v1.7_187: 94324045
       0x72_DungeonTilesetII_v1.7_188: 927300651
       0x72_DungeonTilesetII_v1.7_189: 2060745926
       0x72_DungeonTilesetII_v1.7_190: -1221988920
@@ -4033,7 +4028,6 @@ TextureImporter:
       0x72_DungeonTilesetII_v1.7_267: -1231407293
       0x72_DungeonTilesetII_v1.7_268: 69395372
       0x72_DungeonTilesetII_v1.7_269: -1313839247
-      0x72_DungeonTilesetII_v1.7_27: -328339804
       0x72_DungeonTilesetII_v1.7_270: -306979120
       0x72_DungeonTilesetII_v1.7_271: -445248251
       0x72_DungeonTilesetII_v1.7_272: -1734080977
@@ -4044,7 +4038,6 @@ TextureImporter:
       0x72_DungeonTilesetII_v1.7_277: -613009109
       0x72_DungeonTilesetII_v1.7_278: -146213280
       0x72_DungeonTilesetII_v1.7_279: -1199047234
-      0x72_DungeonTilesetII_v1.7_28: 1038753362
       0x72_DungeonTilesetII_v1.7_280: 490190002
       0x72_DungeonTilesetII_v1.7_281: 873357327
       0x72_DungeonTilesetII_v1.7_282: 1362740733
@@ -4055,7 +4048,6 @@ TextureImporter:
       0x72_DungeonTilesetII_v1.7_287: -2030830965
       0x72_DungeonTilesetII_v1.7_288: 421071915
       0x72_DungeonTilesetII_v1.7_289: -1864717980
-      0x72_DungeonTilesetII_v1.7_29: -1349201840
       0x72_DungeonTilesetII_v1.7_290: 1202890308
       0x72_DungeonTilesetII_v1.7_291: 1214050120
       0x72_DungeonTilesetII_v1.7_292: -476571278
@@ -4067,7 +4059,6 @@ TextureImporter:
       0x72_DungeonTilesetII_v1.7_298: -104302986
       0x72_DungeonTilesetII_v1.7_299: -559898907
       0x72_DungeonTilesetII_v1.7_3: 448242557
-      0x72_DungeonTilesetII_v1.7_30: 617135714
       0x72_DungeonTilesetII_v1.7_300: -1180527086
       0x72_DungeonTilesetII_v1.7_301: -266552459
       0x72_DungeonTilesetII_v1.7_302: 1158829395
@@ -4278,10 +4269,6 @@ TextureImporter:
       0x72_DungeonTilesetII_v1.7_488: 971792692
       0x72_DungeonTilesetII_v1.7_489: -305386521
       0x72_DungeonTilesetII_v1.7_49: 1539997937
-      0x72_DungeonTilesetII_v1.7_490: 1073940490
-      0x72_DungeonTilesetII_v1.7_491: -285462866
-      0x72_DungeonTilesetII_v1.7_492: 183783349
-      0x72_DungeonTilesetII_v1.7_493: 1262043696
       0x72_DungeonTilesetII_v1.7_494: -2060578462
       0x72_DungeonTilesetII_v1.7_495: -628866979
       0x72_DungeonTilesetII_v1.7_496: -853671197
@@ -4308,11 +4295,7 @@ TextureImporter:
       0x72_DungeonTilesetII_v1.7_515: -1820347732
       0x72_DungeonTilesetII_v1.7_516: 323834255
       0x72_DungeonTilesetII_v1.7_517: -1489682494
-      0x72_DungeonTilesetII_v1.7_518: 1039645020
-      0x72_DungeonTilesetII_v1.7_519: -583485673
       0x72_DungeonTilesetII_v1.7_52: -724047872
-      0x72_DungeonTilesetII_v1.7_520: 1472002277
-      0x72_DungeonTilesetII_v1.7_521: 430546734
       0x72_DungeonTilesetII_v1.7_522: -1864463220
       0x72_DungeonTilesetII_v1.7_523: 932214958
       0x72_DungeonTilesetII_v1.7_524: -2136383827
@@ -4452,8 +4435,6 @@ TextureImporter:
       0x72_DungeonTilesetII_v1.7_8: -1767604047
       0x72_DungeonTilesetII_v1.7_80: 2044735009
       0x72_DungeonTilesetII_v1.7_81: 634433377
-      0x72_DungeonTilesetII_v1.7_82: 888087576
-      0x72_DungeonTilesetII_v1.7_83: -663654799
       0x72_DungeonTilesetII_v1.7_84: -4911275
       0x72_DungeonTilesetII_v1.7_85: -1855153219
       0x72_DungeonTilesetII_v1.7_86: -2141661505
@@ -4471,6 +4452,25 @@ TextureImporter:
       0x72_DungeonTilesetII_v1.7_97: 2115583682
       0x72_DungeonTilesetII_v1.7_98: -1992517758
       0x72_DungeonTilesetII_v1.7_99: -1679495332
+      Lesser Defense Potion: -583485673
+      Lesser Experience Potion: 430546734
+      Lesser Health Potion: 1039645020
+      Lesser Poison Potion: 1472002277
+      Normal Defense Potion: -285462866
+      Normal Experience Potion: 1262043696
+      Normal Health Potion: 1073940490
+      Normal Poison Potion: 183783349
+      Weapon_ButcherKnife: -567701576
+      Weapon_Club: 888087576
+      Weapon_ExcellentSword: 617135714
+      Weapon_Katana: -2105749389
+      Weapon_Mace: -663654799
+      Weapon_NormalSword: -1349201840
+      Weapon_Rapier: -1753559880
+      Weapon_RustySword: 1038753362
+      Weapon_ShortSword: -328339804
+      Weapon_SilverMachete: 1827566174
+      Weapon_StraightSword: 94324045
       coin_1: -1225840331
       coin_2: 440693359
       coin_3: -2069681423

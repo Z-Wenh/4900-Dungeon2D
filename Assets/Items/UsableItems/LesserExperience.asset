@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 04f97964ad948cf4496a3db01ec8685d, type: 3}
-  m_Name: LesserPotion
+  m_Name: LesserExperience
   m_EditorClassIdentifier: 
-  itemName: Lesser Potion
-  itemSprite: {fileID: 1039645020, guid: 0bbb84b738f65544c80e8e75df4c59c9, type: 3}
-  statToChange: 1
+  itemName: Lesser Experience Potion
+  itemSprite: {fileID: 430546734, guid: 0bbb84b738f65544c80e8e75df4c59c9, type: 3}
+  statToChange: 2
   attributeToChange: 0
-  statChangeAmount: 20
+  statChangeAmount: 10
   attributeChangeAmount: 0

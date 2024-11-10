@@ -14,7 +14,7 @@ public class EnemyAttack : MonoBehaviour {
 
     void Update() {
         if (_isColliding && (playerStatus != null)) {
-            playerStatus.TakeDamage(_attackDamage);
+            playerStatus.TakeDamage(Mathf.Max(0, _attackDamage - playerStatus._defense));
         }
     }
 

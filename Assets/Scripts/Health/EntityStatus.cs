@@ -10,9 +10,9 @@ public class EntityStatus : MonoBehaviour {
     [SerializeField] private TMP_Text popupText;
     [SerializeField] private int _entityLevel;
     [SerializeField] private float _currentHealth;
-    public float _containExperience;
+    public int _containExperience;
     public float _maximumHealth;
-    [SerializeField] private float _defense;
+    public float _defense;
     public bool IsInvincible{ get; set; }
     public HealthBar healthBar;
     public UnityEvent OnDamaged;
@@ -45,6 +45,12 @@ public class EntityStatus : MonoBehaviour {
     }
 
     public void AddHealth(float healAmount) {
+        if(healAmount < 0) {
+            _currentHealth += healAmount;
+            healthBar.SetHealth(_currentHealth);
+            return;
+        }
+
         if (_currentHealth == _maximumHealth) {
             return ;
         }
@@ -58,5 +64,9 @@ public class EntityStatus : MonoBehaviour {
     
     public void AddLevel() {
         _entityLevel++;
+    }
+
+    public void IncreaseDefense(int defenseAmount) {
+        _defense += defenseAmount;
     }
 }

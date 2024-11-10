@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour {
     [SerializeField] float _attackDamage;
-    [SerializeField] private const float _initialMaxExperience = 30;
+    [SerializeField] private const int _initialMaxExperience = 30;
     private EntityStatus _enemyStatus;
     [SerializeField] private ExperienceController experienceController; 
-    private float _experienceAmt;
+    private int _experienceAmt;
     private bool _isColliding;
 
     void Awake() {
@@ -16,7 +16,7 @@ public class PlayerAttack : MonoBehaviour {
     }
     void Update() {
         if(_isColliding && (_enemyStatus != null)) {
-            _enemyStatus.TakeDamage(_attackDamage);
+            _enemyStatus.TakeDamage(Mathf.Max(0, _attackDamage - _enemyStatus._defense));
         }
     }
 

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04f97964ad948cf4496a3db01ec8685d, type: 3}
+  m_Name: LesserHealth
+  m_EditorClassIdentifier: 
+  itemName: Lesser Health Potion
+  itemSprite: {fileID: 1039645020, guid: 0bbb84b738f65544c80e8e75df4c59c9, type: 3}
+  statToChange: 1
+  attributeToChange: 0
+  statChangeAmount: 10
+  attributeChangeAmount: 0

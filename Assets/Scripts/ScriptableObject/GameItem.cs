@@ -16,7 +16,13 @@ public class GameItem : ScriptableObject {
             GameObject.Find("Player").GetComponent<EntityStatus>().AddHealth(statChangeAmount);
         }
         if(statToChange == StatToChange.experience) {
-            GameObject.Find("Player Experience Bar HUD").GetComponent<ExperienceController>().IncreaseExp(statChangeAmount);
+            GameObject.Find("PlayerExperienceBarHUD").GetComponent<ExperienceController>().IncreaseExp(statChangeAmount);
+        }
+        if(attributeToChange == AttributeToChange.damage) {
+            GameObject.Find("Player").GetComponent<PlayerAttack>().IncreaseAttackDamage(attributeChangeAmount);
+        }
+        if(attributeToChange == AttributeToChange.defense) {
+            GameObject.Find("Player").GetComponent<EntityStatus>().IncreaseDefense(attributeChangeAmount);
         }
     }
 
