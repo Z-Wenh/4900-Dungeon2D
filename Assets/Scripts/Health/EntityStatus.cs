@@ -62,6 +62,11 @@ public class EntityStatus : MonoBehaviour {
         }
     }
     
+    public void AddExperience(int expAmount) {
+        GameObject PlayerExperienceController = GameObject.Find("PlayerExperienceBarHUD");
+        PlayerExperienceController.GetComponent<ExperienceController>().IncreaseExp(expAmount);
+    }
+
     public void AddLevel() {
         _entityLevel++;
     }

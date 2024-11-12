@@ -10,13 +10,16 @@ public class GameItem : ScriptableObject {
     public AttributeToChange attributeToChange = new AttributeToChange();
     public int statChangeAmount;
     public int attributeChangeAmount;
+    public bool UsableItem;
+    public bool EquipableItem;
+    
 
     public void UseItem() {
         if(statToChange == StatToChange.health) {
             GameObject.Find("Player").GetComponent<EntityStatus>().AddHealth(statChangeAmount);
         }
         if(statToChange == StatToChange.experience) {
-            GameObject.Find("PlayerExperienceBarHUD").GetComponent<ExperienceController>().IncreaseExp(statChangeAmount);
+            GameObject.FindGameObjectWithTag("ExperienceHUD").GetComponent<ExperienceController>().IncreaseExp(statChangeAmount);
         }
         if(attributeToChange == AttributeToChange.damage) {
             GameObject.Find("Player").GetComponent<PlayerAttack>().IncreaseAttackDamage(attributeChangeAmount);

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class InventoryManager : MonoBehaviour { 
     public GameObject InventoryMenu;
-    public GameObject PlayerHUD;
+    public GameObject OpenInventoryButton;
     private bool menuActivated;
     public ItemSlot[] itemSlot;
     public GameItem[] gameItems;
@@ -25,13 +25,13 @@ public class InventoryManager : MonoBehaviour {
 
     public void OpenInventory() {
         InventoryMenu.SetActive(true);
-        PlayerHUD.SetActive(false);
+        OpenInventoryButton.SetActive(false);
         menuActivated = true;
     }
 
     public void CloseInventory() {
         InventoryMenu.SetActive(false);
-        PlayerHUD.SetActive(true);
+        OpenInventoryButton.SetActive(true);
         menuActivated = false;
     }
 

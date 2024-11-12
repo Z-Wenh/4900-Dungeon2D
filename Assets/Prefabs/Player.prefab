@@ -321,7 +321,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 845df569d1104b44883445619f80ca9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _attackDamage: 50
+  _attackDamage: 20
   experienceController: {fileID: 0}
 --- !u!114 &5782103507925592173
 MonoBehaviour:

@@ -17,4 +17,4 @@ MonoBehaviour:
   statToChange: 1
   attributeToChange: 1
   statChangeAmount: -4
-  attributeChangeAmount: 10
+  attributeChangeAmount: 5

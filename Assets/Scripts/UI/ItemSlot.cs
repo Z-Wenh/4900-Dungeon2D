@@ -26,7 +26,7 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler {
     public TMP_Text ItemDescriptionText;
     public Image itemDescriptionImage;
 
-    void Start() {
+    void Awake() {
         _inventoryManager = GameObject.Find("InventoryCanvas").GetComponent<InventoryManager>();
         selectedShader.SetActive(false);
         selectionPanel.SetActive(false);

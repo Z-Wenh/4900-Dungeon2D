@@ -6,6 +6,7 @@ TagManager:
   tags:
   - AboveGroundObjects
   - Enemy
+  - ExperienceHUD
   layers:
   - Default
   - TransparentFX
