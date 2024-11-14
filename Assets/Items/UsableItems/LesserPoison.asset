@@ -18,3 +18,5 @@ MonoBehaviour:
   attributeToChange: 1
   statChangeAmount: -4
   attributeChangeAmount: 5
+  UsableItem: 1
+  EquipableItem: 0

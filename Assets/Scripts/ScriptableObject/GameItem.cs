@@ -13,20 +13,26 @@ public class GameItem : ScriptableObject {
     public bool UsableItem;
     public bool EquipableItem;
     
-
     public void UseItem() {
-        if(statToChange == StatToChange.health) {
-            GameObject.Find("Player").GetComponent<EntityStatus>().AddHealth(statChangeAmount);
+        if(UsableItem) {
+            if(statToChange == StatToChange.health) {
+                GameObject.Find("Player").GetComponent<EntityStatus>().AddHealth(statChangeAmount);
+            }
+            if(statToChange == StatToChange.experience) {
+                GameObject.FindGameObjectWithTag("ExperienceHUD").GetComponent<ExperienceController>().IncreaseExp(statChangeAmount);
+            }
+            if(attributeToChange == AttributeToChange.damage) {
+                GameObject.Find("Player").GetComponent<PlayerAttack>().IncreaseAttackDamage(attributeChangeAmount);
+            }
+            if(attributeToChange == AttributeToChange.defense) {
+                GameObject.Find("Player").GetComponent<EntityStatus>().IncreaseDefense(attributeChangeAmount);
+            }
         }
-        if(statToChange == StatToChange.experience) {
-            GameObject.FindGameObjectWithTag("ExperienceHUD").GetComponent<ExperienceController>().IncreaseExp(statChangeAmount);
+
+        if(EquipableItem) {
+            
         }
-        if(attributeToChange == AttributeToChange.damage) {
-            GameObject.Find("Player").GetComponent<PlayerAttack>().IncreaseAttackDamage(attributeChangeAmount);
-        }
-        if(attributeToChange == AttributeToChange.defense) {
-            GameObject.Find("Player").GetComponent<EntityStatus>().IncreaseDefense(attributeChangeAmount);
-        }
+        
     }
 
     public enum StatToChange {

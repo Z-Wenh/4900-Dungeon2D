@@ -6,7 +6,12 @@ public class InventoryManager : MonoBehaviour {
     public GameObject InventoryMenu;
     public GameObject OpenInventoryButton;
     private bool menuActivated;
+
     public ItemSlot[] itemSlot;
+    public EquipmentSlot HeadArmorSlot;
+    public EquipmentSlot BodyArmorSlot;
+    public EquipmentSlot LegArmorSlot;    
+    public EquipmentSlot WeaponSlot;
     public GameItem[] gameItems;
     
     void Start() {
@@ -51,6 +56,11 @@ public class InventoryManager : MonoBehaviour {
             }
         }
         return false;
+    }
+
+    public void EquipItem(string itemName, Sprite itemSprite) {
+
+        return;
     }
 
     public void DeselectAllSlots() {
