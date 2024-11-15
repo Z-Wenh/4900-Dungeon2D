@@ -8,10 +8,7 @@ public class InventoryManager : MonoBehaviour {
     private bool menuActivated;
 
     public ItemSlot[] itemSlot;
-    public EquipmentSlot HeadArmorSlot;
-    public EquipmentSlot BodyArmorSlot;
-    public EquipmentSlot LegArmorSlot;    
-    public EquipmentSlot WeaponSlot;
+    public EquipmentSlot HeadArmorSlot, BodyArmorSlot, LegArmorSlot, WeaponSlot;
     public GameItem[] gameItems;
     
     void Start() {
@@ -71,3 +68,12 @@ public class InventoryManager : MonoBehaviour {
         }
     }
 }
+
+public enum ItemType {
+    consumable,
+    headArmor,
+    bodyArmor,
+    legArmor,
+    weapon,
+    none
+};
