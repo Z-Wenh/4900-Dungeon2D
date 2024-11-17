@@ -12,6 +12,7 @@ public class GameItem : ScriptableObject {
     public int attributeChangeAmount;
     public bool UsableItem;
     public bool EquipableItem;
+    [TextArea] public string itemDescription;
     
     public void UseItem() {
         if(UsableItem) {
@@ -30,7 +31,12 @@ public class GameItem : ScriptableObject {
         }
 
         if(EquipableItem) {
-            
+            if(attributeToChange == AttributeToChange.damage) {
+                GameObject.Find("Player").GetComponent<PlayerAttack>().IncreaseAttackDamage(attributeChangeAmount);
+            }
+            if(attributeToChange == AttributeToChange.defense) {
+                GameObject.Find("Player").GetComponent<EntityStatus>().IncreaseDefense(attributeChangeAmount);
+            }
         }
         
     }

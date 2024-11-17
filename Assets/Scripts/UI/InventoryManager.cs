@@ -45,19 +45,14 @@ public class InventoryManager : MonoBehaviour {
         }
     }
 
-    public bool AddItem(string itemName, Sprite itemSprite, string itemDescription) {
+    public bool AddItem(string itemName, Sprite itemSprite, string itemDescription, ItemType itemType) {
         for(int i = itemSlot.Length - 1 ; i >= 0 ; i--) {
             if(itemSlot[i].hasItem == false) {
-                itemSlot[i].AddItem(itemName, itemSprite, itemDescription);
+                itemSlot[i].AddItem(itemName, itemSprite, itemDescription, itemType);
                 return true;
             }
         }
         return false;
-    }
-
-    public void EquipItem(string itemName, Sprite itemSprite) {
-
-        return;
     }
 
     public void DeselectAllSlots() {
@@ -65,6 +60,15 @@ public class InventoryManager : MonoBehaviour {
             itemSlot[i].selectedShader.SetActive(false);
             itemSlot[i].selectionPanel.SetActive(false);
             itemSlot[i].currentItemSelected = false;
+
+            HeadArmorSlot._selectedShader.SetActive(false);
+            HeadArmorSlot._thisItemSelected = false;
+            BodyArmorSlot._selectedShader.SetActive(false);
+            BodyArmorSlot._thisItemSelected = false;
+            LegArmorSlot._selectedShader.SetActive(false);
+            LegArmorSlot._thisItemSelected = false;
+            WeaponSlot._selectedShader.SetActive(false);
+            WeaponSlot._thisItemSelected = false;
         }
     }
 }

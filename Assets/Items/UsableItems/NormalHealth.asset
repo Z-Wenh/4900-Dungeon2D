@@ -20,3 +20,4 @@ MonoBehaviour:
   attributeChangeAmount: 0
   UsableItem: 1
   EquipableItem: 0
+  itemDescription: A healing potion with stronger effect. Restores 30 HP on use.

@@ -17,6 +17,7 @@ MonoBehaviour:
   statToChange: 0
   attributeToChange: 2
   statChangeAmount: 0
-  attributeChangeAmount: 3
+  attributeChangeAmount: 1
   UsableItem: 1
   EquipableItem: 0
+  itemDescription: An extremely durable potion. Increase player defense by 1.

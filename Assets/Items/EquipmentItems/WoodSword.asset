@@ -10,15 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 04f97964ad948cf4496a3db01ec8685d, type: 3}
-  m_Name: NormalPoison
+  m_Name: WoodSword
   m_EditorClassIdentifier: 
-  itemName: Normal Poison Potion
-  itemSprite: {fileID: 183783349, guid: 0bbb84b738f65544c80e8e75df4c59c9, type: 3}
-  statToChange: 1
+  itemName: WoodSword
+  itemSprite: {fileID: 1103376397, guid: 27f9eca4e67a0044090e936f50f9ab72, type: 3}
+  statToChange: 0
   attributeToChange: 1
-  statChangeAmount: -8
-  attributeChangeAmount: 10
-  UsableItem: 1
-  EquipableItem: 0
-  itemDescription: A dangerous looking potion. Inflicts 8 damage to player, and gain
-    10 attack.
+  statChangeAmount: 0
+  attributeChangeAmount: 5
+  UsableItem: 0
+  EquipableItem: 1
+  itemDescription: A shabby wooden sword. Increase player damage by 5.
