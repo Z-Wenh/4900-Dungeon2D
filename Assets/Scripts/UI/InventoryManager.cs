@@ -1,19 +1,35 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class InventoryManager : MonoBehaviour { 
     public GameObject InventoryMenu;
     public GameObject OpenInventoryButton;
+    public GameObject StatMenuButton;
+    public GameObject StatMenuPanel;
     private bool menuActivated;
+    private bool _statPanelActive;
+    private TMP_Text _attackText;
+    private TMP_Text _defenseText;
+    private int _attackTextAmount;
+    private int _defenseTextAmount;
 
     public ItemSlot[] itemSlot;
     public EquipmentSlot HeadArmorSlot, BodyArmorSlot, LegArmorSlot, WeaponSlot;
-    public GameItem[] gameItems;
+    public GameItem[] consumableItems;
+    public GameItem[] equipItems;
     
-    void Start() {
+    void Awake() {
+        _attackText = GameObject.Find("AttackStatText").GetComponent<TMP_Text>();
+        _defenseText = GameObject.Find("DefenseStatText").GetComponent<TMP_Text>();
         InventoryMenu.SetActive(false);
+        StatMenuPanel.SetActive(false);
         menuActivated = false;
+        _statPanelActive = false;
+    }
+    void Start() {
+        UpdateStatText();
     }
 
     void Update() {
@@ -23,26 +39,65 @@ public class InventoryManager : MonoBehaviour {
         else if(Input.GetButtonDown("Inventory") && !menuActivated) {
             OpenInventory();
         }
+
+        UpdateStatText();
     }
 
     public void OpenInventory() {
         InventoryMenu.SetActive(true);
         OpenInventoryButton.SetActive(false);
+        StatMenuButton.SetActive(false);
+        StatMenuPanel.SetActive(true);
         menuActivated = true;
+        StatMenuPanel.GetComponent<RectTransform>().SetLocalPositionAndRotation(new Vector2(122, -1), Quaternion.identity);
     }
 
     public void CloseInventory() {
         InventoryMenu.SetActive(false);
         OpenInventoryButton.SetActive(true);
+        StatMenuButton.SetActive(true);
         menuActivated = false;
+        if(!_statPanelActive) {
+            StatMenuPanel.SetActive(false);
+        }
+        StatMenuPanel.GetComponent<RectTransform>().SetLocalPositionAndRotation(new Vector2(346, -1), Quaternion.identity);
+    }
+
+    public void OpenStatMenu() {
+        if(StatMenuPanel.activeSelf) {
+            StatMenuPanel.SetActive(false);
+            _statPanelActive = false;
+        }
+        else {
+            StatMenuPanel.SetActive(true);
+            _statPanelActive = true;
+        }
     }
 
     public void UseItem(string itemName) {
-        for(int i = 0 ; i < gameItems.Length ; i++) {
-            if(gameItems[i].itemName == itemName) {
-                gameItems[i].UseItem();
+        for(int i = 0 ; i < consumableItems.Length ; i++) {
+            if(consumableItems[i].itemName == itemName) {
+                consumableItems[i].UseItem();
             }
         }
+    }
+
+    public void EquipGear(string itemName) {
+        for(int i = 0 ; i < equipItems.Length ; i++) {
+            if(equipItems[i].itemName == itemName) {
+                equipItems[i].EquipCurrentGear();
+            }
+        }
+        UpdateStatText();
+    }
+
+    public void UnEquipGear(string itemName) {
+        for(int i = 0 ; i < equipItems.Length ; i++) {
+            if(equipItems[i].itemName == itemName) {
+                equipItems[i].UnEquipCurrentGear();
+            }
+        }
+        UpdateStatText();
     }
 
     public bool AddItem(string itemName, Sprite itemSprite, string itemDescription, ItemType itemType) {
@@ -70,6 +125,13 @@ public class InventoryManager : MonoBehaviour {
             WeaponSlot._selectedShader.SetActive(false);
             WeaponSlot._thisItemSelected = false;
         }
+    }
+
+    public void UpdateStatText() {
+        _attackTextAmount = GameObject.Find("Player").GetComponent<PlayerAttack>().GetAttackDamage();
+        _defenseTextAmount = GameObject.Find("Player").GetComponent<EntityStatus>().GetDefense();
+        _attackText.text = "Attack: " + _attackTextAmount;
+        _defenseText.text = "Defense: " + _defenseTextAmount;
     }
 }
 

@@ -15,30 +15,36 @@ public class GameItem : ScriptableObject {
     [TextArea] public string itemDescription;
     
     public void UseItem() {
-        if(UsableItem) {
-            if(statToChange == StatToChange.health) {
-                GameObject.Find("Player").GetComponent<EntityStatus>().AddHealth(statChangeAmount);
-            }
-            if(statToChange == StatToChange.experience) {
-                GameObject.FindGameObjectWithTag("ExperienceHUD").GetComponent<ExperienceController>().IncreaseExp(statChangeAmount);
-            }
-            if(attributeToChange == AttributeToChange.damage) {
-                GameObject.Find("Player").GetComponent<PlayerAttack>().IncreaseAttackDamage(attributeChangeAmount);
-            }
-            if(attributeToChange == AttributeToChange.defense) {
-                GameObject.Find("Player").GetComponent<EntityStatus>().IncreaseDefense(attributeChangeAmount);
-            }
+        if(statToChange == StatToChange.health) {
+            GameObject.Find("Player").GetComponent<EntityStatus>().AddHealth(statChangeAmount);
         }
+        if(statToChange == StatToChange.experience) {
+            GameObject.FindGameObjectWithTag("ExperienceHUD").GetComponent<ExperienceController>().IncreaseExp(statChangeAmount);
+        }
+        if(attributeToChange == AttributeToChange.damage) {
+            GameObject.Find("Player").GetComponent<PlayerAttack>().IncreaseAttackDamage(attributeChangeAmount);
+        }
+        if(attributeToChange == AttributeToChange.defense) {
+            GameObject.Find("Player").GetComponent<EntityStatus>().IncreaseDefense(attributeChangeAmount);
+        }
+    }
 
-        if(EquipableItem) {
-            if(attributeToChange == AttributeToChange.damage) {
-                GameObject.Find("Player").GetComponent<PlayerAttack>().IncreaseAttackDamage(attributeChangeAmount);
-            }
-            if(attributeToChange == AttributeToChange.defense) {
-                GameObject.Find("Player").GetComponent<EntityStatus>().IncreaseDefense(attributeChangeAmount);
-            }
+    public void EquipCurrentGear() {
+        if(attributeToChange == AttributeToChange.damage) {
+            GameObject.Find("Player").GetComponent<PlayerAttack>().IncreaseAttackDamage(attributeChangeAmount);
         }
-        
+        if(attributeToChange == AttributeToChange.defense) {
+            GameObject.Find("Player").GetComponent<EntityStatus>().IncreaseDefense(attributeChangeAmount);
+        }
+    }
+
+    public void UnEquipCurrentGear() {
+        if(attributeToChange == AttributeToChange.damage) {
+            GameObject.Find("Player").GetComponent<PlayerAttack>().IncreaseAttackDamage(-attributeChangeAmount);
+        }
+        if(attributeToChange == AttributeToChange.defense) {
+            GameObject.Find("Player").GetComponent<EntityStatus>().IncreaseDefense(-attributeChangeAmount);
+        }
     }
 
     public enum StatToChange {

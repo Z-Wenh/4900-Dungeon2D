@@ -26,10 +26,22 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler {
     /* Description of each Item Slot*/
     public TMP_Text ItemDescriptionNameText;
     public TMP_Text ItemDescriptionText;
-    public Image itemDescriptionImage;
+    public Image ItemDescriptionImage;
 
     void Awake() {
-        _inventoryManager = GameObject.Find("InventoryCanvas").GetComponent<InventoryManager>();
+        if(_inventoryManager == null)
+            _inventoryManager = GameObject.Find("InventoryCanvas").GetComponent<InventoryManager>();
+
+        if(ItemDescriptionNameText == null) {
+            ItemDescriptionNameText = GameObject.Find("ItemDescriptionNameText").GetComponent<TMP_Text>();
+        }
+        if(ItemDescriptionText == null) {
+            ItemDescriptionText = GameObject.Find("ItemDescriptionText").GetComponent<TMP_Text>();
+        }
+        if(ItemDescriptionImage == null) {
+            ItemDescriptionImage = GameObject.Find("ItemDescriptionImage").GetComponent<Image>();
+        }
+        
         selectedShader.SetActive(false);
         selectionPanel.SetActive(false);
     }
@@ -76,9 +88,9 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler {
             currentItemSelected = true;
             ItemDescriptionNameText.text = itemName;
             ItemDescriptionText.text = _itemDescription;
-            itemDescriptionImage.sprite = _itemSprite;
-            if(itemDescriptionImage.sprite == null) {
-                itemDescriptionImage.sprite = emptySprite;
+            ItemDescriptionImage.sprite = _itemSprite;
+            if(ItemDescriptionImage.sprite == null) {
+                ItemDescriptionImage.sprite = emptySprite;
             }
         }
     }
@@ -93,14 +105,16 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler {
     }
 
     public void UseButtonClicked() {
-        _inventoryManager.UseItem(itemName);
         
         if(itemType != ItemType.consumable) {
             EquipGear();
             Debug.Log(itemName + " IS EQUIPPED");
         }
+        else {
+            _inventoryManager.UseItem(itemName);
+            Debug.Log(itemName + " IS USED");
+        }
 
-        Debug.Log(itemName + " IS USED");
         EmptySlot();
     }
 
@@ -129,7 +143,7 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler {
         _itemImage.sprite = emptySprite;
         ItemDescriptionNameText.text = "";
         ItemDescriptionText.text = "";
-        itemDescriptionImage.sprite = emptySprite;
+        ItemDescriptionImage.sprite = emptySprite;
         hasItem = false;
         selectionPanel.SetActive(false);
         selectedShader.SetActive(false);

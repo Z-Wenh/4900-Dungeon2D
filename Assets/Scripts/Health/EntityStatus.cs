@@ -12,7 +12,7 @@ public class EntityStatus : MonoBehaviour {
     [SerializeField] private float _currentHealth;
     public int _containExperience;
     public float _maximumHealth;
-    public float _defense;
+    [SerializeField] private int _defense;
     public bool IsInvincible{ get; set; }
     public HealthBar healthBar;
     public UnityEvent OnDamaged;
@@ -73,5 +73,9 @@ public class EntityStatus : MonoBehaviour {
 
     public void IncreaseDefense(int defenseAmount) {
         _defense += defenseAmount;
+    }
+
+    public int GetDefense() {
+        return _defense;
     }
 }

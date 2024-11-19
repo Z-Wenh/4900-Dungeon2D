@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour {
-    [SerializeField] float _attackDamage;
+    [SerializeField] private int _attackDamage;
     [SerializeField] private const int _initialMaxExperience = 30;
     private EntityStatus _enemyStatus;
     [SerializeField] private ExperienceController experienceController; 
@@ -16,12 +16,16 @@ public class PlayerAttack : MonoBehaviour {
     }
     void Update() {
         if(_isColliding && (_enemyStatus != null)) {
-            _enemyStatus.TakeDamage(Mathf.Max(0, _attackDamage - _enemyStatus._defense));
+            _enemyStatus.TakeDamage(Mathf.Max(0, _attackDamage - _enemyStatus.GetDefense()));
         }
     }
 
-    public void IncreaseAttackDamage(float dmgAmount) {
+    public void IncreaseAttackDamage(int dmgAmount) {
         _attackDamage += dmgAmount;
+    }
+
+    public int GetAttackDamage() {
+        return _attackDamage;
     }
 
     void OnCollisionEnter2D(Collision2D other) {

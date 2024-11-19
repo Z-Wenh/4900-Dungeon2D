@@ -891,4 +891,4 @@ MonoBehaviour:
   emptySprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
   ItemDescriptionNameText: {fileID: 0}
   ItemDescriptionText: {fileID: 0}
-  itemDescriptionImage: {fileID: 0}
+  ItemDescriptionImage: {fileID: 0}

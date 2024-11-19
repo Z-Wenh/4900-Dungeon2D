@@ -18,16 +18,21 @@ public class EquipmentSlot : MonoBehaviour, IPointerClickHandler {
     private string _itemDescription;
     [SerializeField] private bool _slotInUse;
 
-
     public GameObject _selectedShader;
     public bool _thisItemSelected;
     [SerializeField] private Sprite _emptySprite;
     [SerializeField] private InventoryManager _inventoryManager;
+    [SerializeField] private TMP_Text _ItemDescriptionNameText;
+    [SerializeField] private TMP_Text _ItemDescriptionText;
+    [SerializeField] private Image _ItemDescriptionImage;
     
     void Start() {
         _inventoryManager = GameObject.Find("InventoryCanvas").GetComponent<InventoryManager>();
         _slotInUse = false;
         _thisItemSelected = false;
+        _ItemDescriptionImage = GameObject.Find("ItemDescriptionImage").GetComponent<Image>();
+        _ItemDescriptionNameText = GameObject.Find("ItemDescriptionNameText").GetComponent<TMP_Text>();
+        _ItemDescriptionText = GameObject.Find("ItemDescriptionText").GetComponent<TMP_Text>();
     }
 
     public void EquipGear(string itemName, Sprite itemSprite, string itemDescription) {
@@ -35,6 +40,7 @@ public class EquipmentSlot : MonoBehaviour, IPointerClickHandler {
             UnequipGear();
         }
         
+        _inventoryManager.EquipGear(itemName);
         _itemSprite = itemSprite;
         _slotImage.sprite = itemSprite;
         _slotName.enabled = false;
@@ -61,6 +67,9 @@ public class EquipmentSlot : MonoBehaviour, IPointerClickHandler {
             _inventoryManager.DeselectAllSlots();
             _selectedShader.SetActive(true);
             _thisItemSelected = true;
+            _ItemDescriptionImage.sprite = _itemSprite;
+            _ItemDescriptionNameText.text = _itemName;
+            _ItemDescriptionText.text = _itemDescription;
         }
     }
 
@@ -70,6 +79,7 @@ public class EquipmentSlot : MonoBehaviour, IPointerClickHandler {
     }
 
     public void UnequipGear() {
+        _inventoryManager.UnEquipGear(_itemName);
         _inventoryManager.DeselectAllSlots();
         _inventoryManager.AddItem(_itemName, _itemSprite, _itemDescription, _itemType);
         
