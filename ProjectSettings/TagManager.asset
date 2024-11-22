@@ -7,6 +7,7 @@ TagManager:
   - AboveGroundObjects
   - Enemy
   - ExperienceHUD
+  - LevelAdvance
   layers:
   - Default
   - TransparentFX
@@ -53,11 +54,11 @@ TagManager:
   - name: Miscellaneous
     uniqueID: 3117956049
     locked: 0
-  - name: AboveGround
-    uniqueID: 1584648193
-    locked: 0
   - name: Interactables
     uniqueID: 4040103017
+    locked: 0
+  - name: AboveGround
+    uniqueID: 1584648193
     locked: 0
   - name: Enemies
     uniqueID: 4210480513

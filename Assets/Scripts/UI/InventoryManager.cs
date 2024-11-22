@@ -10,8 +10,9 @@ public class InventoryManager : MonoBehaviour {
     public GameObject StatMenuPanel;
     private bool menuActivated;
     private bool _statPanelActive;
-    private TMP_Text _attackText;
-    private TMP_Text _defenseText;
+    [SerializeField] private TMP_Text _attackText;
+    [SerializeField] private TMP_Text _defenseText;
+    [SerializeField] private GameObject _playerObject;
     private int _attackTextAmount;
     private int _defenseTextAmount;
 
@@ -21,8 +22,16 @@ public class InventoryManager : MonoBehaviour {
     public GameItem[] equipItems;
     
     void Awake() {
-        _attackText = GameObject.Find("AttackStatText").GetComponent<TMP_Text>();
-        _defenseText = GameObject.Find("DefenseStatText").GetComponent<TMP_Text>();
+        if(_attackText == null) {
+            _attackText = GameObject.Find("AttackStatText").GetComponent<TMP_Text>();
+        }
+        if(_defenseText == null) {
+            _defenseText = GameObject.Find("DefenseStatText").GetComponent<TMP_Text>();
+        }
+        if(_playerObject == null) {
+            _playerObject = GameObject.Find("Player");
+        }
+
         InventoryMenu.SetActive(false);
         StatMenuPanel.SetActive(false);
         menuActivated = false;
@@ -60,7 +69,7 @@ public class InventoryManager : MonoBehaviour {
         if(!_statPanelActive) {
             StatMenuPanel.SetActive(false);
         }
-        StatMenuPanel.GetComponent<RectTransform>().SetLocalPositionAndRotation(new Vector2(346, -1), Quaternion.identity);
+        StatMenuPanel.GetComponent<RectTransform>().SetLocalPositionAndRotation(new Vector2(347.5f, -1), Quaternion.identity);
     }
 
     public void OpenStatMenu() {
@@ -128,8 +137,10 @@ public class InventoryManager : MonoBehaviour {
     }
 
     public void UpdateStatText() {
-        _attackTextAmount = GameObject.Find("Player").GetComponent<PlayerAttack>().GetAttackDamage();
-        _defenseTextAmount = GameObject.Find("Player").GetComponent<EntityStatus>().GetDefense();
+        _attackTextAmount = _playerObject.GetComponent<PlayerAttack>().GetAttackDamage();
+        _defenseTextAmount = _playerObject.GetComponent<EntityStatus>().GetDefense();
+        //_attackTextAmount = GameObject.Find("Player").GetComponent<PlayerAttack>().GetAttackDamage();
+        //_defenseTextAmount = GameObject.Find("Player").GetComponent<EntityStatus>().GetDefense();
         _attackText.text = "Attack: " + _attackTextAmount;
         _defenseText.text = "Defense: " + _defenseTextAmount;
     }

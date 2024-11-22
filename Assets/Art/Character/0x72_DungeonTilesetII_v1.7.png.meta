@@ -3313,81 +3313,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_DungeonTilesetII_v1.7_584
-      rect:
-        serializedVersion: 2
-        x: 304
-        y: 96
-        width: 16
-        height: 16
-      alignment: 9
-      pivot: {x: 0.5, y: 0.4}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: -1}
-        - {x: 8, y: -1}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6a56e1cef7e18f84bbcc6ea6a03523d1
-      internalID: -1471441500
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 0x72_DungeonTilesetII_v1.7_585
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 96
-        width: 16
-        height: 16
-      alignment: 9
-      pivot: {x: 0.5, y: 0.4}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: -1}
-        - {x: 8, y: -1}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 791f01509f1f6464eb6b5926ab73f974
-      internalID: -1157068866
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 0x72_DungeonTilesetII_v1.7_586
-      rect:
-        serializedVersion: 2
-        x: 336
-        y: 96
-        width: 16
-        height: 16
-      alignment: 9
-      pivot: {x: 0.5, y: 0.4}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: -1}
-        - {x: 8, y: -1}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 316fd646fe04f184c9b20119d3ff8fb2
-      internalID: 93723625
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: 0x72_DungeonTilesetII_v1.7_590
       rect:
         serializedVersion: 2
@@ -3426,8 +3351,8 @@ TextureImporter:
       outline: []
       physicsShape:
       - - {x: -8, y: -8}
-        - {x: -8, y: -1}
-        - {x: 8, y: -1}
+        - {x: -8, y: 2}
+        - {x: 8, y: 2}
         - {x: 8, y: -8}
       tessellationDetail: 0
       bones: []
@@ -3451,8 +3376,8 @@ TextureImporter:
       outline: []
       physicsShape:
       - - {x: -8, y: -8}
-        - {x: -8, y: -1}
-        - {x: 8, y: -1}
+        - {x: -8, y: 2}
+        - {x: 8, y: 2}
         - {x: 8, y: -8}
       tessellationDetail: 0
       bones: []
@@ -3476,8 +3401,8 @@ TextureImporter:
       outline: []
       physicsShape:
       - - {x: -8, y: -8}
-        - {x: -8, y: -1}
-        - {x: 8, y: -1}
+        - {x: -8, y: 2}
+        - {x: 8, y: 2}
         - {x: 8, y: -8}
       tessellationDetail: 0
       bones: []
@@ -3501,8 +3426,8 @@ TextureImporter:
       outline: []
       physicsShape:
       - - {x: -8, y: -8}
-        - {x: -8, y: -1}
-        - {x: 8, y: -1}
+        - {x: -8, y: 4}
+        - {x: 8, y: 4}
         - {x: 8, y: -8}
       tessellationDetail: 0
       bones: []
@@ -3526,8 +3451,8 @@ TextureImporter:
       outline: []
       physicsShape:
       - - {x: -8, y: -8}
-        - {x: -8, y: -1}
-        - {x: 8, y: -1}
+        - {x: -8, y: 4}
+        - {x: 8, y: 4}
         - {x: 8, y: -8}
       tessellationDetail: 0
       bones: []
@@ -3551,8 +3476,8 @@ TextureImporter:
       outline: []
       physicsShape:
       - - {x: -8, y: -8}
-        - {x: -8, y: -1}
-        - {x: 8, y: -1}
+        - {x: -8, y: 4}
+        - {x: 8, y: 4}
         - {x: 8, y: -8}
       tessellationDetail: 0
       bones: []
