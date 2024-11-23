@@ -3,8 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Events;
 
 public class LevelAdvanceController : MonoBehaviour {
+    private bool _playerInRange;
+    public KeyCode interactKey;
+    public UnityEvent interactAction;
     [SerializeField] private Canvas _nextLevelCanvas;
 
     void Awake() {
@@ -15,18 +19,26 @@ public class LevelAdvanceController : MonoBehaviour {
         _nextLevelCanvas.enabled = false;
     }
 
-    void OnTriggerStay2D(Collider2D other) {
-        if(other.gameObject.CompareTag("Player")) {
-            _nextLevelCanvas.enabled = true;
-            if(Input.GetKeyDown(KeyCode.F)) {
-                Debug.Log("Button F was pressed");
+    void Update() {
+        if(_playerInRange) {
+            if(Input.GetKeyDown(interactKey)) {
+                Debug.Log("F key is pressed");
+                interactAction.Invoke();
             }
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D other) {
+        if(other.gameObject.CompareTag("Player")) {
+            _playerInRange = true;
+            _nextLevelCanvas.enabled = _playerInRange;
         }
     }
 
     void OnTriggerExit2D(Collider2D other) {
         if(other.gameObject.CompareTag("Player")) {
-            _nextLevelCanvas.enabled = false;
+            _playerInRange = false;
+            _nextLevelCanvas.enabled = _playerInRange;
         }
     }
 }
