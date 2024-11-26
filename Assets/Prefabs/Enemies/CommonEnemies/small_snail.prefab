@@ -471,7 +471,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -84486783
-  m_SortingLayer: 4
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: -543752729, guid: 0bbb84b738f65544c80e8e75df4c59c9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -565,9 +565,9 @@ MonoBehaviour:
   _popupDamagePrefab: {fileID: 8253097460064326840, guid: ef4be44083fb5924cb83c4341674b1b7, type: 3}
   popupText: {fileID: 4398707630921356607, guid: ef4be44083fb5924cb83c4341674b1b7, type: 3}
   _entityLevel: 1
-  _currentHealth: 100
+  _currentHealth: 50
   _containExperience: 20
-  _maximumHealth: 100
+  _maximumHealth: 50
   _defense: 0
   healthBar: {fileID: 891056628884615513}
   OnDamaged:

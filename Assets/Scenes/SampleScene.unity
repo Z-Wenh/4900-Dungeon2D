@@ -19137,7 +19137,7 @@ MonoBehaviour:
   OnLevelUp:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 8904019902641019283}
         m_TargetAssemblyTypeName: EntityStatus, Assembly-CSharp
         m_MethodName: AddLevel
         m_Mode: 1
@@ -19149,7 +19149,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 7550291182665027442}
         m_TargetAssemblyTypeName: PlayerAttack, Assembly-CSharp
         m_MethodName: IncreaseAttackDamage
         m_Mode: 3
@@ -20758,6 +20758,10 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 740251826}
+    - target: {fileID: 1923021031182943461, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
+      propertyPath: OnDied.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 477948768}
     - target: {fileID: 2273183732166728287, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
       propertyPath: experienceController
       value: 
@@ -20767,11 +20771,33 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
+--- !u!114 &7550291182665027442 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2273183732166728287, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
+  m_PrefabInstance: {fileID: 7550291182665027441}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 845df569d1104b44883445619f80ca9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8904019902641019282 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1394263477378242275, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
   m_PrefabInstance: {fileID: 7550291182665027441}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8904019902641019283 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1923021031182943461, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
+  m_PrefabInstance: {fileID: 7550291182665027441}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 112d93da2fbc3de4e92ff19adce1a485, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

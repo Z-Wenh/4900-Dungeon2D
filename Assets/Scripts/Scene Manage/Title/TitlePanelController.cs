@@ -12,7 +12,7 @@ public class TitlePanelController : MonoBehaviour {
     }
     
     public void Play() {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Stage1Level1");
     }
     
     public void Instruction() {

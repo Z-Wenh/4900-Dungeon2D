@@ -4,10 +4,10 @@ using TMPro;
 using UnityEngine;
 
 public class InventoryManager : MonoBehaviour { 
-    public GameObject InventoryMenu;
-    public GameObject OpenInventoryButton;
-    public GameObject StatMenuButton;
-    public GameObject StatMenuPanel;
+    [SerializeField] private GameObject InventoryMenu;
+    [SerializeField] private GameObject OpenInventoryButton;
+    [SerializeField] private GameObject StatMenuButton;
+    [SerializeField] private GameObject StatMenuPanel;
     private bool menuActivated;
     private bool _statPanelActive;
     [SerializeField] private TMP_Text _attackText;
@@ -22,6 +22,20 @@ public class InventoryManager : MonoBehaviour {
     public GameItem[] equipItems;
     
     void Awake() {
+        /*Initializing all necessary GameObjects*/
+        if(InventoryMenu == null) {
+            InventoryMenu = GameObject.Find("InventoryMenu");
+        }
+        if(OpenInventoryButton == null) {
+            OpenInventoryButton = GameObject.Find("OpenInventoryButton");
+        }
+        if(StatMenuButton == null) {
+            StatMenuButton = GameObject.Find("StatusMenuButton");
+        }
+        if(StatMenuPanel == null) {
+            StatMenuPanel = GameObject.Find("StatusPanel");
+        }
+        
         if(_attackText == null) {
             _attackText = GameObject.Find("AttackStatText").GetComponent<TMP_Text>();
         }
@@ -139,8 +153,6 @@ public class InventoryManager : MonoBehaviour {
     public void UpdateStatText() {
         _attackTextAmount = _playerObject.GetComponent<PlayerAttack>().GetAttackDamage();
         _defenseTextAmount = _playerObject.GetComponent<EntityStatus>().GetDefense();
-        //_attackTextAmount = GameObject.Find("Player").GetComponent<PlayerAttack>().GetAttackDamage();
-        //_defenseTextAmount = GameObject.Find("Player").GetComponent<EntityStatus>().GetDefense();
         _attackText.text = "Attack: " + _attackTextAmount;
         _defenseText.text = "Defense: " + _defenseTextAmount;
     }

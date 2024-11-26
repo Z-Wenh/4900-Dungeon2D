@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
-{
+public class PlayerMovement : MonoBehaviour {
     [SerializeField] private float _speed = 5;
     [SerializeField] private Transform _movePoint;
     [SerializeField] private LayerMask _obstacleMask;
     [SerializeField] private Animator _myAnimator;
     [SerializeField] private Rigidbody2D _myRigidBody;
+    [SerializeField] private Transform _spawnPoint;
+
     private bool _isFacingRight;
     private bool _canMove;
 
@@ -19,6 +20,10 @@ public class PlayerMovement : MonoBehaviour
         }
         if(_myRigidBody == null) {
             _myRigidBody = GetComponent<Rigidbody2D>();
+        }
+        if(_spawnPoint == null) {
+            _spawnPoint = GameObject.Find("SpawnPoint").GetComponent<Transform>();
+            gameObject.transform.position = _spawnPoint.position;
         }
     }
 
