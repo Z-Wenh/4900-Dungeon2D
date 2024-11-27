@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: WoodClub
   m_EditorClassIdentifier: 
   itemName: WoodClub
-  itemSprite: {fileID: 0}
+  itemSprite: {fileID: 1914447469, guid: 27f9eca4e67a0044090e936f50f9ab72, type: 3}
   statToChange: 0
   attributeToChange: 1
   statChangeAmount: 0

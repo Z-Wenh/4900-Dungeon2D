@@ -1088,11 +1088,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2353054968388214466, guid: 5d009f4d2e46fb2468fcb55a11e1575a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -16.5
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2353054968388214466, guid: 5d009f4d2e46fb2468fcb55a11e1575a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 2353054968388214466, guid: 5d009f4d2e46fb2468fcb55a11e1575a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7806,41 +7806,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1659755350195489520, guid: 300c5f3e4717b5a4a8a1a2ee2f48c6bd, type: 3}
-      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1659755350195489520, guid: 300c5f3e4717b5a4a8a1a2ee2f48c6bd, type: 3}
-      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1659755350195489520, guid: 300c5f3e4717b5a4a8a1a2ee2f48c6bd, type: 3}
       propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 477948768}
-    - target: {fileID: 1659755350195489520, guid: 300c5f3e4717b5a4a8a1a2ee2f48c6bd, type: 3}
-      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 7550291182665027451}
-    - target: {fileID: 1659755350195489520, guid: 300c5f3e4717b5a4a8a1a2ee2f48c6bd, type: 3}
-      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[2].m_Target
-      value: 
-      objectReference: {fileID: 7550291182665027445}
-    - target: {fileID: 1659755350195489520, guid: 300c5f3e4717b5a4a8a1a2ee2f48c6bd, type: 3}
-      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1659755350195489520, guid: 300c5f3e4717b5a4a8a1a2ee2f48c6bd, type: 3}
-      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: ResetMovePoint
-      objectReference: {fileID: 0}
-    - target: {fileID: 1659755350195489520, guid: 300c5f3e4717b5a4a8a1a2ee2f48c6bd, type: 3}
-      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
-      value: PlayerMovement, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 1659755350195489520, guid: 300c5f3e4717b5a4a8a1a2ee2f48c6bd, type: 3}
-      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 6088347719711839211, guid: 300c5f3e4717b5a4a8a1a2ee2f48c6bd, type: 3}
       propertyPath: m_Name
       value: Stairs_NextLevel
@@ -9438,28 +9406,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1394263477378242275, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
   m_PrefabInstance: {fileID: 7550291182665027441}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7550291182665027445 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 838888483953860166, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
-  m_PrefabInstance: {fileID: 7550291182665027441}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 674869144}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f854ae3f6b056c04fa13f698287451dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &7550291182665027451 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7367559415588362441, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
-  m_PrefabInstance: {fileID: 7550291182665027441}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 674869144}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3adf39287daa504490c752aee3ef509, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &7582914389903861922
 PrefabInstance:
   m_ObjectHideFlags: 0
