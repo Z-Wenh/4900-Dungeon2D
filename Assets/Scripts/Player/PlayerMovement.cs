@@ -9,9 +9,8 @@ public class PlayerMovement : MonoBehaviour {
     [SerializeField] private LayerMask _obstacleMask;
     [SerializeField] private Animator _myAnimator;
     [SerializeField] private Rigidbody2D _myRigidBody;
-    [SerializeField] private Transform _spawnPoint;
 
-    private bool _isFacingRight;
+    [SerializeField] private bool _isFacingRight;
     private bool _canMove;
 
     void Awake() {
@@ -20,10 +19,6 @@ public class PlayerMovement : MonoBehaviour {
         }
         if(_myRigidBody == null) {
             _myRigidBody = GetComponent<Rigidbody2D>();
-        }
-        if(_spawnPoint == null) {
-            _spawnPoint = GameObject.Find("SpawnPoint").GetComponent<Transform>();
-            gameObject.transform.position = _spawnPoint.position;
         }
     }
 
@@ -68,9 +63,18 @@ public class PlayerMovement : MonoBehaviour {
             _myAnimator.SetBool("isRunning", true);
         }
     }
-    private void Flip() {
+    public void Flip() {
         transform.Rotate(0, 180, 0);
         _isFacingRight = !_isFacingRight;
+    }
+
+    public void ResetMovePoint() {
+        _movePoint.parent = gameObject.transform;
+        Debug.Log("Parent is " + gameObject);
+        _movePoint.position = gameObject.transform.position;
+        Debug.Log("Position is set to player position");
+        _movePoint.parent = null;
+        Debug.Log("Parent set to null");
     }
 
     void OnCollisionStay2D(Collision2D other) {
@@ -84,4 +88,6 @@ public class PlayerMovement : MonoBehaviour {
             _canMove = true;
         }
     }
+
+    
 }
