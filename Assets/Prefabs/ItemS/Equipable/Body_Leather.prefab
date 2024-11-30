@@ -48,7 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: LeatherArmor
   sprite: {fileID: -383408519, guid: 27f9eca4e67a0044090e936f50f9ab72, type: 3}
-  itemDescription: Simple leather armor. Increase defense by 1.
+  itemDescription: Simple leather armor. Increase maximum HP by 10.
   itemCanBeAdded: 0
   itemType: 2
 --- !u!61 &8358776425258612998

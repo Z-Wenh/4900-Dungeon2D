@@ -36,6 +36,9 @@ public class GameItem : ScriptableObject {
         if(attributeToChange == AttributeToChange.defense) {
             GameObject.Find("Player").GetComponent<EntityStatus>().IncreaseDefense(attributeChangeAmount);
         }
+        if(attributeToChange == AttributeToChange.maxHealth) {
+            GameObject.Find("Player").GetComponent<EntityStatus>().AddMaxHealth(attributeChangeAmount);
+        }
     }
 
     public void UnEquipCurrentGear() {
@@ -44,6 +47,9 @@ public class GameItem : ScriptableObject {
         }
         if(attributeToChange == AttributeToChange.defense) {
             GameObject.Find("Player").GetComponent<EntityStatus>().IncreaseDefense(-attributeChangeAmount);
+        }
+        if(attributeToChange == AttributeToChange.maxHealth) {
+            GameObject.Find("Player").GetComponent<EntityStatus>().AddMaxHealth(-attributeChangeAmount);
         }
     }
 
@@ -56,7 +62,8 @@ public class GameItem : ScriptableObject {
     public enum AttributeToChange {
         none,
         damage,
-        defense
+        defense,
+        maxHealth
     };
 
 }

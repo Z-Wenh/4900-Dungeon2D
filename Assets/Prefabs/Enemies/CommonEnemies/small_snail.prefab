@@ -565,10 +565,10 @@ MonoBehaviour:
   _popupDamagePrefab: {fileID: 8253097460064326840, guid: ef4be44083fb5924cb83c4341674b1b7, type: 3}
   popupText: {fileID: 4398707630921356607, guid: ef4be44083fb5924cb83c4341674b1b7, type: 3}
   _entityLevel: 1
-  _currentHealth: 50
-  _containExperience: 20
-  _maximumHealth: 50
-  _defense: 0
+  _currentHealth: 40
+  _containExperience: 10
+  _maximumHealth: 40
+  _defense: 1
   healthBar: {fileID: 891056628884615513}
   OnDamaged:
     m_PersistentCalls:

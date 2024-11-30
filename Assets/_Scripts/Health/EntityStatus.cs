@@ -19,8 +19,10 @@ public class EntityStatus : MonoBehaviour {
     public UnityEvent OnDied;
 
     void Awake() {
+        _currentHealth = _maximumHealth;
         healthBar.SetMaxHealth(_maximumHealth);
     }
+
     public void TakeDamage(float damageAmount) {
         if (IsInvincible) {
             return;
@@ -60,6 +62,12 @@ public class EntityStatus : MonoBehaviour {
         if (_currentHealth > _maximumHealth) {
             _currentHealth = _maximumHealth;
         }
+    }
+
+    public void AddMaxHealth(float maxHealthAmount) {
+        _maximumHealth += maxHealthAmount;
+        healthBar.SetMaxHealth(_maximumHealth);
+        AddHealth(maxHealthAmount);
     }
     
     public void AddExperience(int expAmount) {
