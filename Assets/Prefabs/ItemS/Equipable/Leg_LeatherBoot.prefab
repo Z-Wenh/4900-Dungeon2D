@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6917758261388180751}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 18.23459, y: -3.6258593, z: 0.14308788}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -48,9 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: LeatherBoot
   sprite: {fileID: 440117907, guid: 27f9eca4e67a0044090e936f50f9ab72, type: 3}
-  itemDescription: 'Simple leather boot. Increase defense by 1.
-
-'
+  itemDescription: Simple leather boot. Increase defense by 1.
   itemCanBeAdded: 0
   itemType: 3
 --- !u!61 &2686610809221610282

@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 04f97964ad948cf4496a3db01ec8685d, type: 3}
-  m_Name: IronSword
+  m_Name: SilverSword
   m_EditorClassIdentifier: 
-  itemName: IronSword
-  itemSprite: {fileID: -1223118393, guid: 27f9eca4e67a0044090e936f50f9ab72, type: 3}
+  itemName: SilverSword
+  itemSprite: {fileID: 2067646075, guid: 27f9eca4e67a0044090e936f50f9ab72, type: 3}
   statToChange: 0
   attributeToChange: 1
   statChangeAmount: 0
-  attributeChangeAmount: 10
+  attributeChangeAmount: 15
   UsableItem: 0
   EquipableItem: 1
-  itemDescription: 
+  itemDescription: Well refined silver sword. Increase player damage by 15.

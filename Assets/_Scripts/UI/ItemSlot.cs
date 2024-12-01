@@ -122,7 +122,7 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler {
         GameObject itemToDrop = new GameObject(itemName);
         Item newItem = itemToDrop.AddComponent<Item>();
         newItem.itemName = itemName;
-        newItem.sprite = _itemSprite;
+        newItem.spriteRender.sprite = _itemSprite;
         newItem.itemDescription = _itemDescription;
         newItem.itemType = itemType;
 

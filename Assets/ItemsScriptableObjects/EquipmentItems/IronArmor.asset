@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04f97964ad948cf4496a3db01ec8685d, type: 3}
+  m_Name: IronArmor
+  m_EditorClassIdentifier: 
+  itemName: IronArmor
+  itemSprite: {fileID: -702818694, guid: 27f9eca4e67a0044090e936f50f9ab72, type: 3}
+  statToChange: 0
+  attributeToChange: 3
+  statChangeAmount: 0
+  attributeChangeAmount: 25
+  UsableItem: 0
+  EquipableItem: 1
+  itemDescription: Sturdy iron armor. Increase maximum HP by 25.

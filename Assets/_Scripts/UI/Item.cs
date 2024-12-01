@@ -4,23 +4,35 @@ using UnityEngine;
 
 public class Item : MonoBehaviour {
     public string itemName;
-    public Sprite sprite;
+    public SpriteRenderer spriteRender;
     [TextArea] public string itemDescription;
     public bool itemCanBeAdded;
 
     private InventoryManager _inventoryManager;
+    public GameItem gameItem;
     public ItemType itemType;
 
+    private void OnValidate(){
+        if(gameItem == null) {
+            return;
+        }
+        this.name = gameItem.itemName;
+        itemName = gameItem.itemName;
+        itemDescription = gameItem.itemDescription;
+        spriteRender.sprite = gameItem.itemSprite;
+    }
+
     void Start() {
-        _inventoryManager = GameObject.Find("InventoryCanvas").GetComponent<InventoryManager>();
+        if(_inventoryManager == null) {
+            _inventoryManager = GameObject.Find("InventoryCanvas").GetComponent<InventoryManager>();
+        }
         itemCanBeAdded = true;
-        sprite = gameObject.GetComponent<SpriteRenderer>().sprite;
     }
 
     // Update is called once per frame
     void OnTriggerEnter2D(Collider2D other) {
         if(other.gameObject.CompareTag("Player")) {
-            itemCanBeAdded = _inventoryManager.AddItem(itemName, sprite, itemDescription, itemType);
+            itemCanBeAdded = _inventoryManager.AddItem(itemName, spriteRender.sprite, itemDescription, itemType);
             if(itemCanBeAdded) {
                 Destroy(gameObject);
             }
