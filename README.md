@@ -12,8 +12,9 @@ Although not currently set up, this game will be posted on itch.io in the future
 
 # Links & Assets 
 Sprite Sheet Used: <br />
-[sprites by 0x72](https://0x72.itch.io/dungeontileset-ii) <br />
+[Sprites by 0x72](https://0x72.itch.io/dungeontileset-ii) <br />
 [UI sprite by 0x72](https://0x72.itch.io/dungeonui) <br />
+[Item Icons sprites by shikashipx](https://shikashipx.itch.io/shikashis-fantasy-icons-pack) <br />
 
 
 
