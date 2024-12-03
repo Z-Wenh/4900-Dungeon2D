@@ -13,6 +13,7 @@ public class GameItem : ScriptableObject {
     public bool UsableItem;
     public bool EquipableItem;
     [TextArea] public string itemDescription;
+    public ItemType itemType;
     
     public void UseItem() {
         if(statToChange == StatToChange.health) {

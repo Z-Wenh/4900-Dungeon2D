@@ -21,3 +21,4 @@ MonoBehaviour:
   UsableItem: 0
   EquipableItem: 1
   itemDescription: Well refined silver sword. Increase player damage by 15.
+  itemType: 4

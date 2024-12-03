@@ -9,11 +9,12 @@ using UnityEngine.UI;
 public class ItemSlot : MonoBehaviour, IPointerClickHandler {
     /* Data of each Item*/
     //change back to private after changes are made
-    public string itemName;
-    private Sprite _itemSprite;
-    private string _itemDescription;
+    [SerializeField] private string itemName;
+    [SerializeField] private Sprite _itemSprite;
+    [SerializeField] private string _itemDescription;
+    [SerializeField] private ItemType _itemType;
+    [SerializeField] private GameItem _gameItem;
     public bool hasItem;
-    public ItemType itemType;
 
     /* Data of each Item Slot*/
     [SerializeField] private Image _itemImage;
@@ -46,27 +47,28 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler {
         selectionPanel.SetActive(false);
     }
 
-    public void AddItem(string itemName, Sprite itemSprite, string itemDescription, ItemType itemType) {
+    public void AddItem(string itemName, Sprite itemSprite, string itemDescription, ItemType itemType, GameItem gameItem) {
         this.itemName = itemName;
         _itemSprite = itemSprite;
         _itemDescription = itemDescription;
         _itemImage.sprite = itemSprite;
+        _gameItem = gameItem;
         hasItem = true;
-        this.itemType = itemType;
+        _itemType = itemType;
     }
 
     public void EquipGear() {
-        if(itemType == ItemType.headArmor) {
-            _inventoryManager.HeadArmorSlot.EquipGear(itemName, _itemSprite, _itemDescription);
+        if(_itemType == ItemType.headArmor) {
+            _inventoryManager.HeadArmorSlot.EquipGear(itemName, _itemSprite, _itemDescription, _gameItem);
         }
-        if(itemType == ItemType.bodyArmor) {
-            _inventoryManager.BodyArmorSlot.EquipGear(itemName, _itemSprite, _itemDescription);
+        if(_itemType == ItemType.bodyArmor) {
+            _inventoryManager.BodyArmorSlot.EquipGear(itemName, _itemSprite, _itemDescription, _gameItem);
         }
-        if(itemType == ItemType.legArmor) {
-            _inventoryManager.LegArmorSlot.EquipGear(itemName, _itemSprite, _itemDescription);
+        if(_itemType == ItemType.legArmor) {
+            _inventoryManager.LegArmorSlot.EquipGear(itemName, _itemSprite, _itemDescription, _gameItem);
         }
-        if(itemType == ItemType.weapon) {
-            _inventoryManager.WeaponSlot.EquipGear(itemName, _itemSprite, _itemDescription);
+        if(_itemType == ItemType.weapon) {
+            _inventoryManager.WeaponSlot.EquipGear(itemName, _itemSprite, _itemDescription, _gameItem);
         }
 
         EmptySlot();
@@ -86,9 +88,7 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler {
             _inventoryManager.DeselectAllSlots(); 
             selectedShader.SetActive(true);
             currentItemSelected = true;
-            ItemDescriptionNameText.text = itemName;
-            ItemDescriptionText.text = _itemDescription;
-            ItemDescriptionImage.sprite = _itemSprite;
+            DisplayItemDescriptions();
             if(ItemDescriptionImage.sprite == null) {
                 ItemDescriptionImage.sprite = emptySprite;
             }
@@ -101,12 +101,13 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler {
             selectedShader.SetActive(true);
             selectionPanel.SetActive(true);
             currentItemSelected = true;
+            DisplayItemDescriptions();
         }
     }
 
     public void UseButtonClicked() {
         
-        if(itemType != ItemType.consumable) {
+        if(_itemType != ItemType.consumable) {
             EquipGear();
             Debug.Log(itemName + " IS EQUIPPED");
         }
@@ -118,24 +119,31 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler {
         EmptySlot();
     }
 
-    public void DiscardButtonClicked() {
+    private void DiscardButtonClicked() {
         GameObject itemToDrop = new GameObject(itemName);
-        Item newItem = itemToDrop.AddComponent<Item>();
-        newItem.itemName = itemName;
-        newItem.spriteRender.sprite = _itemSprite;
-        newItem.itemDescription = _itemDescription;
-        newItem.itemType = itemType;
-
         SpriteRenderer sr = itemToDrop.AddComponent<SpriteRenderer>();
-        sr.sprite = _itemSprite;
+        Item newItem = itemToDrop.AddComponent<Item>();
+        newItem.gameItem = _gameItem;
+        sr.sprite = _gameItem.itemSprite;
+        newItem.name = _gameItem.itemName;
+        newItem.itemName = _gameItem.itemName;
+        newItem.spriteRender = sr;
+        newItem.itemDescription = _gameItem.itemDescription;
+        newItem.itemType = _gameItem.itemType;
+
         sr.sortingOrder = 0;
         sr.sortingLayerName = "Interactables";
-
         itemToDrop.AddComponent<BoxCollider2D>().isTrigger = true;
         
         itemToDrop.transform.position = GameObject.FindWithTag("Player").transform.position + new Vector3(1f, 0.5f, 0);
 
         EmptySlot();
+    }
+
+    private void DisplayItemDescriptions() {
+        ItemDescriptionNameText.text = itemName;
+        ItemDescriptionText.text = _itemDescription;
+        ItemDescriptionImage.sprite = _itemSprite;
     }
 
     public void EmptySlot() {

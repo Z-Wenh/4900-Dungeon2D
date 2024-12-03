@@ -17,8 +17,9 @@ MonoBehaviour:
   statToChange: 1
   attributeToChange: 1
   statChangeAmount: -8
-  attributeChangeAmount: 10
+  attributeChangeAmount: 8
   UsableItem: 1
   EquipableItem: 0
   itemDescription: A dangerous looking potion. Inflicts 8 damage to player, and gain
-    10 attack.
+    8 attack.
+  itemType: 0

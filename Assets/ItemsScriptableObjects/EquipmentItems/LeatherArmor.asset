@@ -21,3 +21,4 @@ MonoBehaviour:
   UsableItem: 0
   EquipableItem: 1
   itemDescription: Simple leather armor. Increase maximum HP by 10
+  itemType: 2

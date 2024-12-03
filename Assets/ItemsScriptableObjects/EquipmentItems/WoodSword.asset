@@ -21,3 +21,4 @@ MonoBehaviour:
   UsableItem: 0
   EquipableItem: 1
   itemDescription: A shabby wooden sword. Increase player damage by 3.
+  itemType: 4

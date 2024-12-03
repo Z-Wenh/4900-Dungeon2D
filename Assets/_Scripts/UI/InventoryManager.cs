@@ -72,7 +72,7 @@ public class InventoryManager : MonoBehaviour {
         StatMenuButton.SetActive(false);
         StatMenuPanel.SetActive(true);
         menuActivated = true;
-        StatMenuPanel.GetComponent<RectTransform>().SetLocalPositionAndRotation(new Vector2(122, -1), Quaternion.identity);
+        StatMenuPanel.GetComponent<RectTransform>().SetLocalPositionAndRotation(new Vector2(128, -1), Quaternion.identity);
     }
 
     public void CloseInventory() {
@@ -123,10 +123,10 @@ public class InventoryManager : MonoBehaviour {
         UpdateStatText();
     }
 
-    public bool AddItem(string itemName, Sprite itemSprite, string itemDescription, ItemType itemType) {
+    public bool AddItem(string itemName, Sprite itemSprite, string itemDescription, ItemType itemType, GameItem gameItem) {
         for(int i = itemSlot.Length - 1 ; i >= 0 ; i--) {
             if(itemSlot[i].hasItem == false) {
-                itemSlot[i].AddItem(itemName, itemSprite, itemDescription, itemType);
+                itemSlot[i].AddItem(itemName, itemSprite, itemDescription, itemType, gameItem);
                 return true;
             }
         }

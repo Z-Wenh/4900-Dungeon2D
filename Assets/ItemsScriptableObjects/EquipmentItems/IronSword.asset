@@ -21,3 +21,4 @@ MonoBehaviour:
   UsableItem: 0
   EquipableItem: 1
   itemDescription: Sturding iron sword. Increase player damage by 10.
+  itemType: 4

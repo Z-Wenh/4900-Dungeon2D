@@ -21,3 +21,4 @@ MonoBehaviour:
   UsableItem: 0
   EquipableItem: 1
   itemDescription: Sturdy iron boot. Increase defense by 3.
+  itemType: 3

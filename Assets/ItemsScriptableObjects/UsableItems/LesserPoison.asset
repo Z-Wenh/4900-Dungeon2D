@@ -17,8 +17,9 @@ MonoBehaviour:
   statToChange: 1
   attributeToChange: 1
   statChangeAmount: -4
-  attributeChangeAmount: 5
+  attributeChangeAmount: 4
   UsableItem: 1
   EquipableItem: 0
   itemDescription: A suspicious looking potion. Inflicts 4 damage to player, and
-    gain 5 attack.
+    gain 4 attack.
+  itemType: 0

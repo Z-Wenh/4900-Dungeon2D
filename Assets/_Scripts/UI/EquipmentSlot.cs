@@ -11,6 +11,7 @@ public class EquipmentSlot : MonoBehaviour, IPointerClickHandler {
     [SerializeField] private Image _slotImage;
     [SerializeField] private TMP_Text _slotName;
     [SerializeField] private ItemType _itemType = new ItemType();
+    [SerializeField] private GameItem _gameItem;
 
     /*Data pertaining to each item in an equipment slot*/
     private Sprite _itemSprite;
@@ -35,7 +36,7 @@ public class EquipmentSlot : MonoBehaviour, IPointerClickHandler {
         _ItemDescriptionText = GameObject.Find("ItemDescriptionText").GetComponent<TMP_Text>();
     }
 
-    public void EquipGear(string itemName, Sprite itemSprite, string itemDescription) {
+    public void EquipGear(string itemName, Sprite itemSprite, string itemDescription, GameItem gameItem) {
         if(_slotInUse) {
             UnequipGear();
         }
@@ -47,6 +48,7 @@ public class EquipmentSlot : MonoBehaviour, IPointerClickHandler {
 
         _itemName = itemName;
         _itemDescription = itemDescription;
+        _gameItem = gameItem;
         _slotInUse = true;
     }
 
@@ -81,7 +83,7 @@ public class EquipmentSlot : MonoBehaviour, IPointerClickHandler {
     public void UnequipGear() {
         _inventoryManager.UnEquipGear(_itemName);
         _inventoryManager.DeselectAllSlots();
-        _inventoryManager.AddItem(_itemName, _itemSprite, _itemDescription, _itemType);
+        _inventoryManager.AddItem(_itemName, _itemSprite, _itemDescription, _itemType, _gameItem);
         
         _itemSprite = _emptySprite;
         _slotImage.sprite = this._emptySprite;

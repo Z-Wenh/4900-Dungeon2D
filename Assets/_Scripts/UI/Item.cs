@@ -20,6 +20,7 @@ public class Item : MonoBehaviour {
         itemName = gameItem.itemName;
         itemDescription = gameItem.itemDescription;
         spriteRender.sprite = gameItem.itemSprite;
+        itemType = gameItem.itemType;
     }
 
     void Start() {
@@ -32,11 +33,18 @@ public class Item : MonoBehaviour {
     // Update is called once per frame
     void OnTriggerEnter2D(Collider2D other) {
         if(other.gameObject.CompareTag("Player")) {
-            itemCanBeAdded = _inventoryManager.AddItem(itemName, spriteRender.sprite, itemDescription, itemType);
+            itemCanBeAdded = _inventoryManager.AddItem(itemName, spriteRender.sprite, itemDescription, itemType, gameItem);
             if(itemCanBeAdded) {
                 Destroy(gameObject);
             }
             else return; 
         }
+    }
+
+    public void ValidateItem() {
+        this.name = gameItem.itemName;
+        itemName = gameItem.itemName;
+        itemDescription = gameItem.itemDescription;
+        itemType = gameItem.itemType;   
     }
 }

@@ -23,3 +23,4 @@ MonoBehaviour:
   itemDescription: 'Sturdy leather helmet. Increase defense by 1.
 
 '
+  itemType: 1

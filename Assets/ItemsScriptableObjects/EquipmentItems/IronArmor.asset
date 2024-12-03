@@ -21,3 +21,4 @@ MonoBehaviour:
   UsableItem: 0
   EquipableItem: 1
   itemDescription: Sturdy iron armor. Increase maximum HP by 25.
+  itemType: 2

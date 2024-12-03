@@ -21,3 +21,4 @@ MonoBehaviour:
   UsableItem: 0
   EquipableItem: 1
   itemDescription: A wooden club filled with spikes. Increase player damage by 5.
+  itemType: 4
