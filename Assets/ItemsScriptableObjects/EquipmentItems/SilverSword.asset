@@ -17,8 +17,8 @@ MonoBehaviour:
   statToChange: 0
   attributeToChange: 1
   statChangeAmount: 0
-  attributeChangeAmount: 15
+  attributeChangeAmount: 13
   UsableItem: 0
   EquipableItem: 1
-  itemDescription: Well refined silver sword. Increase player damage by 15.
+  itemDescription: Well refined silver sword. Increase player damage by 13.
   itemType: 4

@@ -10,15 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 04f97964ad948cf4496a3db01ec8685d, type: 3}
-  m_Name: IronBoot
+  m_Name: BattleAxe
   m_EditorClassIdentifier: 
-  itemName: IronBoot
-  itemSprite: {fileID: 645648414, guid: 27f9eca4e67a0044090e936f50f9ab72, type: 3}
+  itemName: Battle Axe
+  itemSprite: {fileID: -1687489548, guid: 27f9eca4e67a0044090e936f50f9ab72, type: 3}
   statToChange: 0
-  attributeToChange: 2
+  attributeToChange: 1
   statChangeAmount: 0
-  attributeChangeAmount: 2
+  attributeChangeAmount: 18
   UsableItem: 0
   EquipableItem: 1
-  itemDescription: Sturdy iron boot. Increase defense by 2.
-  itemType: 3
+  itemDescription: A well crafted and powerful battle axe. Increase player damage
+    by 18.
+  itemType: 4

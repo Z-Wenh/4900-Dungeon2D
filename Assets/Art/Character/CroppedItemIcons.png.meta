@@ -362,7 +362,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CroppedItemIcons_29
+      name: Helmer_Plated
       rect:
         serializedVersion: 2
         x: 32
@@ -383,7 +383,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CroppedItemIcons_30
+      name: Helmet_Leather
       rect:
         serializedVersion: 2
         x: 64
@@ -404,7 +404,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CroppedItemIcons_31
+      name: Helmet_Iron
       rect:
         serializedVersion: 2
         x: 96
@@ -425,7 +425,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CroppedItemIcons_32
+      name: Armor_Iron
       rect:
         serializedVersion: 2
         x: 128
@@ -446,28 +446,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CroppedItemIcons_33
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 158
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f59543427ec43e148b612937e5157d98
-      internalID: 277449650
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CroppedItemIcons_34
+      name: Armor_Leather
       rect:
         serializedVersion: 2
         x: 192
@@ -488,7 +467,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CroppedItemIcons_35
+      name: Armor_Plated
       rect:
         serializedVersion: 2
         x: 224
@@ -509,115 +488,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CroppedItemIcons_36
+      name: Boot_Leather
       rect:
         serializedVersion: 2
-        x: 256
-        y: 158
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b84779fdee035f84d9397e9c6870e2b0
-      internalID: 1715123638
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CroppedItemIcons_37
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 158
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ddc3d0c338253864a98b2cc9df202ace
-      internalID: 1083825333
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CroppedItemIcons_38
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 158
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2cb0ae7561642b04f92069655e90b596
-      internalID: -706424702
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CroppedItemIcons_39
-      rect:
-        serializedVersion: 2
-        x: 352
-        y: 158
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2406e20d168666d4a95fc698c62f8bbd
-      internalID: -1997658803
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CroppedItemIcons_40
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 158
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e2b7970a075d71c42a80ecf924f99ad6
-      internalID: 90539422
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CroppedItemIcons_46
-      rect:
-        serializedVersion: 2
-        x: 64
+        x: 65
         y: 126
         width: 32
         height: 32
@@ -635,10 +509,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CroppedItemIcons_47
+      name: Boot_Iron
       rect:
         serializedVersion: 2
-        x: 96
+        x: 97
         y: 126
         width: 32
         height: 32
@@ -651,111 +525,6 @@ TextureImporter:
       bones: []
       spriteID: e4b5c7dde1397864294f87b0c8e762ab
       internalID: 645648414
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CroppedItemIcons_48
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 126
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 44d1849c240b395419eb3b9a6e093a30
-      internalID: -269762811
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CroppedItemIcons_49
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 126
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d965781654ffdf0439edf3dcc50aad23
-      internalID: -1918115889
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CroppedItemIcons_50
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 126
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c8e71b93172d3aa4e900079d5f50c66d
-      internalID: -1991478818
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CroppedItemIcons_51
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 126
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2e8cc702b5b2dd04aa472b3b68ea3760
-      internalID: 916363229
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CroppedItemIcons_52
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 126
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4ab0a227333cace44bb024c35b483a10
-      internalID: -1964959242
       vertices: []
       indices: 
       edges: []
@@ -916,7 +685,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -939,6 +708,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Armor_Iron: -702818694
+      Armor_Leather: -383408519
+      Armor_Plated: -542887268
+      Boot_Iron: 645648414
+      Boot_Leather: 440117907
       CroppedItemIcons_10: -501287462
       CroppedItemIcons_100: 1459913085
       CroppedItemIcons_101: 1250567157
@@ -957,14 +731,7 @@ TextureImporter:
       CroppedItemIcons_26: -428429693
       CroppedItemIcons_27: -1919179271
       CroppedItemIcons_28: 386096201
-      CroppedItemIcons_29: -238086474
       CroppedItemIcons_3: -350045360
-      CroppedItemIcons_30: -1525272278
-      CroppedItemIcons_31: 683267620
-      CroppedItemIcons_32: -702818694
-      CroppedItemIcons_33: 277449650
-      CroppedItemIcons_34: -383408519
-      CroppedItemIcons_35: -542887268
       CroppedItemIcons_36: 1715123638
       CroppedItemIcons_37: 1083825333
       CroppedItemIcons_38: -706424702
@@ -975,8 +742,6 @@ TextureImporter:
       CroppedItemIcons_43: 272013682
       CroppedItemIcons_44: -1617115926
       CroppedItemIcons_45: -592413603
-      CroppedItemIcons_46: 440117907
-      CroppedItemIcons_47: 645648414
       CroppedItemIcons_48: -269762811
       CroppedItemIcons_49: -1918115889
       CroppedItemIcons_50: -1991478818
@@ -1031,6 +796,9 @@ TextureImporter:
       CroppedItemIcons_98: 1157402148
       CroppedItemIcons_99: 1713739832
       EmptySlot: 2003347807
+      Helmer_Plated: -238086474
+      Helmet_Iron: 683267620
+      Helmet_Leather: -1525272278
       Sword_Axe: -1687489548
       Sword_Club: 1914447469
       Sword_Dagger: -2049712056

@@ -454,7 +454,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _attackDamage: 0
-  _levelScale: 2
+  _levelScale: 3
 --- !u!1 &5689316977584894784
 GameObject:
   m_ObjectHideFlags: 0

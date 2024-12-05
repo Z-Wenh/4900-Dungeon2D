@@ -700,8 +700,8 @@ MonoBehaviour:
   popupText: {fileID: 4398707630921356607, guid: ef4be44083fb5924cb83c4341674b1b7, type: 3}
   _entityLevel: 1
   _currentHealth: 100
-  _containExperience: 35
-  _maximumHealth: 100
+  _containExperience: 45
+  _maximumHealth: 110
   _defense: 4
   healthBar: {fileID: 3405766785855946215}
   OnDamaged:
