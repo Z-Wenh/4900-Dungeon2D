@@ -30,7 +30,7 @@ public class EntityStatus : MonoBehaviour {
 
         _currentHealth -= damageAmount;
         healthBar.SetHealth(_currentHealth);
-
+        
         if(_currentHealth < 0) {
             _currentHealth = 0;
         }

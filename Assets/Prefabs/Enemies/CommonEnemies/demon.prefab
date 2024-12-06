@@ -425,9 +425,9 @@ MonoBehaviour:
   popupText: {fileID: 4398707630921356607, guid: ef4be44083fb5924cb83c4341674b1b7, type: 3}
   _entityLevel: 1
   _currentHealth: 100
-  _containExperience: 45
-  _maximumHealth: 110
-  _defense: 4
+  _containExperience: 50
+  _maximumHealth: 130
+  _defense: 14
   healthBar: {fileID: 4443291359021918264}
   OnDamaged:
     m_PersistentCalls:
@@ -497,7 +497,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _attackDamage: 0
-  _levelScale: 4
+  _levelScale: 6
 --- !u!1 &8210401642903712506
 GameObject:
   m_ObjectHideFlags: 0

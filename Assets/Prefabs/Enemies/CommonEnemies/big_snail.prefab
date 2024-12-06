@@ -357,6 +357,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _attackDamage: 0
   _levelScale: 1
+  target: {fileID: 0}
 --- !u!1 &8445063618181057038
 GameObject:
   m_ObjectHideFlags: 0

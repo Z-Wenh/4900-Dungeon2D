@@ -635,7 +635,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.052358627, y: 0.39016837}
+  m_Offset: {x: -0.0037322044, y: 0.39016837}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -665,8 +665,8 @@ MonoBehaviour:
   _entityLevel: 1
   _currentHealth: 100
   _containExperience: 40
-  _maximumHealth: 100
-  _defense: 9
+  _maximumHealth: 115
+  _defense: 10
   healthBar: {fileID: 154710948759745048}
   OnDamaged:
     m_PersistentCalls:
@@ -736,7 +736,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _attackDamage: 0
-  _levelScale: 3
+  _levelScale: 5
 --- !u!1 &7537705319093413531
 GameObject:
   m_ObjectHideFlags: 0
