@@ -21,15 +21,37 @@ public class SceneController : MonoBehaviour {
     }
 
     public void NextLevel() {
-        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex +1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
     }
 
     public void LoadSceneAsync(string sceneName) {
         SceneManager.LoadScene(sceneName);
     }
 
+    public void LoadEndScreen() {
+        SceneManager.LoadScene("EndScreen");
+        //SetActive(false) all the objects that are in dont destroy.
+    }
+
+    public void WinningScreen() {
+        SceneManager.LoadScene("WinScreen");
+        
+    }
+
     void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
+        if(scene.buildIndex == 10 || scene.buildIndex == 11) {
+            GameObject _playerObject = GameObject.FindWithTag("Player");
+            GameObject _playerUI = GameObject.Find("PlayerUI");
+            GameObject _playerInventory = GameObject.Find("InventoryCanvas");
+            _playerObject.SetActive(false);
+            _playerUI.SetActive(false);
+            _playerInventory.SetActive(false);
+            return;
+        }
+        
         _spawnPlayer.SpawnPlayerPosition();
         _playerMovement.ResetMovePoint();
     }
+
+
 }

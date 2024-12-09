@@ -36,6 +36,9 @@ EditorBuildSettings:
     path: Assets/_Scenes/Stage3Level3.unity
     guid: 7842f8a7281bda9498e21907c5d469d0
   - enabled: 1
+    path: Assets/_Scenes/WinScreen.unity
+    guid: 48381335dc9a64c45966633e34afc496
+  - enabled: 1
     path: Assets/_Scenes/EndScreen.unity
     guid: bf647784913df354e85e038f3bf11c6e
   m_configObjects:

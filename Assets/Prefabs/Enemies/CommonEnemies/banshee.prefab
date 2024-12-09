@@ -171,6 +171,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _popupDamagePrefab: {fileID: 8253097460064326840, guid: ef4be44083fb5924cb83c4341674b1b7, type: 3}
   popupText: {fileID: 4398707630921356607, guid: ef4be44083fb5924cb83c4341674b1b7, type: 3}
+  _onHitSoundClip: {fileID: 8300000, guid: a138e9996b4f51c44bbf0ab823453143, type: 3}
   _entityLevel: 1
   _currentHealth: 110
   _containExperience: 40
@@ -246,6 +247,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _attackDamage: 0
   _levelScale: 5
+  target: {fileID: 0}
 --- !u!1 &2182244363533358117
 GameObject:
   m_ObjectHideFlags: 0
@@ -434,6 +436,7 @@ GameObject:
   - component: {fileID: 1596885633946202145}
   - component: {fileID: 4448179835944696354}
   - component: {fileID: 1640591305564225368}
+  - component: {fileID: 4013016981125039224}
   m_Layer: 11
   m_Name: Enemy Health Slider
   m_TagString: Untagged
@@ -528,6 +531,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _slider: {fileID: 4448179835944696354}
   _healthText: {fileID: 5443118933940595009}
+--- !u!114 &4013016981125039224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3160715033505948616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2c82f24eed8da44985d3bf34019ae4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _camera: {fileID: 0}
 --- !u!1 &3983318319778845005
 GameObject:
   m_ObjectHideFlags: 0

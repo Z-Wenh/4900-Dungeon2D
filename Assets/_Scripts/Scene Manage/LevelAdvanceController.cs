@@ -22,7 +22,6 @@ public class LevelAdvanceController : MonoBehaviour {
     void Update() {
         if(_playerInRange) {
             if(Input.GetKeyDown(interactKey)) {
-                Debug.Log("F key is pressed");
                 interactAction.Invoke();
             }
         }

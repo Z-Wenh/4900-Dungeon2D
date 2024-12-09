@@ -358,6 +358,7 @@ GameObject:
   - component: {fileID: 2598713668798254275}
   - component: {fileID: 7931421034418710886}
   - component: {fileID: 3405766785855946215}
+  - component: {fileID: 6676955942371533949}
   m_Layer: 11
   m_Name: Enemy Health Slider
   m_TagString: Untagged
@@ -452,6 +453,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _slider: {fileID: 7931421034418710886}
   _healthText: {fileID: 5211508955883776592}
+--- !u!114 &6676955942371533949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5913857409844645659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2c82f24eed8da44985d3bf34019ae4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _camera: {fileID: 0}
 --- !u!1 &5980896765015675360
 GameObject:
   m_ObjectHideFlags: 0
@@ -773,3 +787,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _attackDamage: 0
   _levelScale: 6
+  target: {fileID: 0}

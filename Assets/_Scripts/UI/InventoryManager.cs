@@ -8,6 +8,7 @@ public class InventoryManager : MonoBehaviour {
     [SerializeField] private GameObject OpenInventoryButton;
     [SerializeField] private GameObject StatMenuButton;
     [SerializeField] private GameObject StatMenuPanel;
+    [SerializeField] private GameObject SettingsPanel;
     private bool menuActivated;
     private bool _statPanelActive;
     [SerializeField] private TMP_Text _attackText;
@@ -35,6 +36,10 @@ public class InventoryManager : MonoBehaviour {
         if(StatMenuPanel == null) {
             StatMenuPanel = GameObject.Find("StatusPanel");
         }
+
+        if(SettingsPanel == null) {
+            SettingsPanel = GameObject.Find("SettingsPanel");
+        }
         
         if(_attackText == null) {
             _attackText = GameObject.Find("AttackStatText").GetComponent<TMP_Text>();
@@ -48,6 +53,7 @@ public class InventoryManager : MonoBehaviour {
 
         InventoryMenu.SetActive(false);
         StatMenuPanel.SetActive(false);
+        SettingsPanel.SetActive(false);
         menuActivated = false;
         _statPanelActive = false;
     }
@@ -67,6 +73,9 @@ public class InventoryManager : MonoBehaviour {
     }
 
     public void OpenInventory() {
+        if(SettingsPanel.activeSelf) {
+            SettingsPanel.SetActive(false);
+        }
         InventoryMenu.SetActive(true);
         OpenInventoryButton.SetActive(false);
         StatMenuButton.SetActive(false);
@@ -94,6 +103,15 @@ public class InventoryManager : MonoBehaviour {
         else {
             StatMenuPanel.SetActive(true);
             _statPanelActive = true;
+        }
+    }
+
+    public void OpenSettingsMenu() {
+        if(SettingsPanel.activeSelf) {
+            SettingsPanel.SetActive(false);
+        }
+        else {
+            SettingsPanel.SetActive(true);
         }
     }
 

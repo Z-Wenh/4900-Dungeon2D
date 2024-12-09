@@ -4,26 +4,31 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class TitlePanelController : MonoBehaviour {
-    [SerializeField] GameObject ButtonPanel;
     [SerializeField] GameObject InstructionPanel;
-    
+    [SerializeField] GameObject SettingsPanel;
+
     void Awake() {
         InstructionPanel.SetActive(false);
+        SettingsPanel.SetActive(false);
     }
     
     public void Play() {
         SceneManager.LoadScene("Stage1Level1");
     }
     
-    public void Instruction() {
+    public void OpenInstruction() {
         InstructionPanel.SetActive(true);
     }
 
-    public void Setting() {
-
+    public void OpenSetting() {
+        SettingsPanel.SetActive(true);
     }
 
     public void ExitInstruction() {
         InstructionPanel.SetActive(false);
+    }
+
+    public void ExitSettings() {
+        SettingsPanel.SetActive(false);
     }
 }

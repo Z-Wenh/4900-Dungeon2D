@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DontDestroy : MonoBehaviour {
-    public static GameObject[] persistingObjects = new GameObject[4];
+    public static GameObject[] persistingObjects = new GameObject[5];
     [SerializeField] private int _objectIndex;
     void Awake() {
         if(persistingObjects[_objectIndex] == null) {

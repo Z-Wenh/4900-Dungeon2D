@@ -8,6 +8,7 @@ using TMPro;
 public class EntityStatus : MonoBehaviour {
     [SerializeField] private GameObject _popupDamagePrefab;
     [SerializeField] private TMP_Text popupText;
+    [SerializeField] private AudioClip _onHitSoundClip;
     [SerializeField] private int _entityLevel;
     [SerializeField] private float _currentHealth;
     public int _containExperience;
@@ -43,6 +44,7 @@ public class EntityStatus : MonoBehaviour {
             popupText.text = damageAmount.ToString();
             GameObject popUpDamage = Instantiate(_popupDamagePrefab, transform.position, Quaternion.identity);
             popUpDamage.GetComponent<RectTransform>().anchoredPosition = new Vector2(transform.position.x, transform.position.y + 1.5f);
+            SoundFXManager.instance.PlaySoundFXClip(_onHitSoundClip, transform, 0.7f);
         }
     }
 

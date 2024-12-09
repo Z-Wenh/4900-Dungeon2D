@@ -69,11 +69,8 @@ public class PlayerMovement : MonoBehaviour {
 
     public void ResetMovePoint() {
         _movePoint.parent = gameObject.transform;
-        Debug.Log("Parent is " + gameObject);
         _movePoint.position = gameObject.transform.position;
-        Debug.Log("Position is set to player position");
         _movePoint.parent = null;
-        Debug.Log("Parent set to null");
     }
 
     void OnCollisionStay2D(Collision2D other) {
@@ -88,5 +85,4 @@ public class PlayerMovement : MonoBehaviour {
         }
     }
 
-    
 }

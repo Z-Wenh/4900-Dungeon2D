@@ -7,14 +7,6 @@ using TMPro;
 public class HealthBar : MonoBehaviour {
     [SerializeField] private Slider _slider;
     [SerializeField] private TMP_Text _healthText;
-    [SerializeField] private Camera _camera;  
-
-    void Awake() {
-        _camera = GameObject.FindWithTag("MainCamera").GetComponent<Camera>();
-    }
-    void Update() {
-        transform.rotation = _camera.transform.rotation;
-    }
 
     public void SetMaxHealth(float health) {
         _slider.maxValue = health;

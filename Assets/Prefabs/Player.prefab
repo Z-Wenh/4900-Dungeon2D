@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 2273183732166728287}
   - component: {fileID: 838888483953860166}
   - component: {fileID: 7046002515425898734}
-  - component: {fileID: 7367559415588362441}
+  - component: {fileID: 196421601927545533}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -82,7 +82,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -917973011
-  m_SortingLayer: 7
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: 709899030, guid: 08cacc06f4eb9a04a8838a6b054dfab6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -202,6 +202,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _popupDamagePrefab: {fileID: 8253097460064326840, guid: ef4be44083fb5924cb83c4341674b1b7, type: 3}
   popupText: {fileID: 4398707630921356607, guid: ef4be44083fb5924cb83c4341674b1b7, type: 3}
+  _onHitSoundClip: {fileID: 8300000, guid: aa701f873cf94bf4194648755795b87b, type: 3}
   _entityLevel: 1
   _currentHealth: 120
   _containExperience: 0
@@ -230,6 +231,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
         m_MethodName: LoadSceneAsync
         m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: EndScreen
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1848301774102267666}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -310,7 +323,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _objectIndex: 0
---- !u!114 &7367559415588362441
+--- !u!114 &196421601927545533
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -194,7 +194,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1177011247
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -686,7 +686,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -254864279
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -945,7 +945,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -254864279
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -1114,7 +1114,7 @@ Transform:
   m_GameObject: {fileID: 278145824}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.5, y: -1, z: -5}
+  m_LocalPosition: {x: -1.56, y: -1, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1204,7 +1204,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.21960784, g: 0.21960784, b: 0.21960784, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1254,7 +1254,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.5, y: -1, z: -5}
+  m_LocalPosition: {x: -1.56, y: -1, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1456,7 +1456,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1699303565
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -4168,7 +4168,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1584648193
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0.19444442, z: 0}
@@ -4795,7 +4795,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1584648193
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -6284,6 +6284,10 @@ PrefabInstance:
       propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 477948768}
+    - target: {fileID: 1659755350195489520, guid: 300c5f3e4717b5a4a8a1a2ee2f48c6bd, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: WinningScreen
+      objectReference: {fileID: 0}
     - target: {fileID: 6088347719711839211, guid: 300c5f3e4717b5a4a8a1a2ee2f48c6bd, type: 3}
       propertyPath: m_Name
       value: Stairs_NextLevel
@@ -6477,7 +6481,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -254864279
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -383408519, guid: 27f9eca4e67a0044090e936f50f9ab72, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -6677,6 +6681,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerUI
       objectReference: {fileID: 0}
+    - target: {fileID: 405036712421132755, guid: 06ba5aa75ca8d384ab29c19da217df4f, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 405036712421132755, guid: 06ba5aa75ca8d384ab29c19da217df4f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1586693185951759055, guid: 06ba5aa75ca8d384ab29c19da217df4f, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -6805,6 +6817,14 @@ PrefabInstance:
       propertyPath: OnLevelUp.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7936007569813444198, guid: 06ba5aa75ca8d384ab29c19da217df4f, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7936007569813444198, guid: 06ba5aa75ca8d384ab29c19da217df4f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8567259029654780071, guid: 06ba5aa75ca8d384ab29c19da217df4f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -6829,7 +6849,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1394263477378242275, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.5
+      value: -1.56
       objectReference: {fileID: 0}
     - target: {fileID: 1394263477378242275, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6876,8 +6896,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 740251826}
     - target: {fileID: 1923021031182943461, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
+      propertyPath: OnDied.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1923021031182943461, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
       propertyPath: OnDied.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1923021031182943461, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
       propertyPath: OnDied.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -6885,7 +6909,7 @@ PrefabInstance:
       objectReference: {fileID: 477948768}
     - target: {fileID: 1923021031182943461, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
       propertyPath: OnDied.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadSceneAsync
+      value: LoadEndScreen
       objectReference: {fileID: 0}
     - target: {fileID: 1923021031182943461, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
       propertyPath: OnDied.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName

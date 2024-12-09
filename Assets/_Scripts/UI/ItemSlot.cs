@@ -109,11 +109,9 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler {
         
         if(_itemType != ItemType.consumable) {
             EquipGear();
-            Debug.Log(itemName + " IS EQUIPPED");
         }
         else {
             _inventoryManager.UseItem(itemName);
-            Debug.Log(itemName + " IS USED");
         }
 
         EmptySlot();

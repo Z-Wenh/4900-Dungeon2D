@@ -8,6 +8,8 @@ TagManager:
   - Enemy
   - ExperienceHUD
   - LevelAdvance
+  - SoundFX
+  - Music
   layers:
   - Default
   - TransparentFX
@@ -44,6 +46,9 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 4253558739
     locked: 0
   - name: HUD
     uniqueID: 186463591
