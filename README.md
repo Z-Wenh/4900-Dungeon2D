@@ -16,6 +16,6 @@ Sprite Sheet Used: <br />
 [UI sprite by 0x72](https://0x72.itch.io/dungeonui) <br />
 [Item Icons sprites by shikashipx](https://shikashipx.itch.io/shikashis-fantasy-icons-pack) <br />
 
-
+Music: Silent Halls by Fimnur
 
 Notion: https://www.notion.so/Fallen-Ruins-fb34945596f6412193b87a49ad084bd6?pvs=4
