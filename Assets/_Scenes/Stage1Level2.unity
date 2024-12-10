@@ -1146,7 +1146,6 @@ GameObject:
   m_Component:
   - component: {fileID: 477948769}
   - component: {fileID: 477948768}
-  - component: {fileID: 477948770}
   m_Layer: 0
   m_Name: SceneController
   m_TagString: Untagged
@@ -1183,19 +1182,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &477948770
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 477948767}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 115e1c794fc2e2a4ba62019a4014d352, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _objectIndex: 5
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -7699,6 +7685,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1552583663012515660, guid: 300c5f3e4717b5a4a8a1a2ee2f48c6bd, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1552583663012515660, guid: 300c5f3e4717b5a4a8a1a2ee2f48c6bd, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1552583663012515660, guid: 300c5f3e4717b5a4a8a1a2ee2f48c6bd, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1659755350195489520, guid: 300c5f3e4717b5a4a8a1a2ee2f48c6bd, type: 3}
       propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

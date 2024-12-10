@@ -296,7 +296,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   _myAnimator: {fileID: 6939481375987005287}
-  _myRigidBody: {fileID: 3274971954058398631}
   _isFacingRight: 0
 --- !u!114 &7046002515425898734
 MonoBehaviour:

@@ -9,10 +9,10 @@ public class SceneController : MonoBehaviour {
     
     void Awake() {
         if(_playerMovement == null) {
-            _playerMovement = GameObject.Find("Player").GetComponent<PlayerMovement>();
+            _playerMovement = GameObject.FindWithTag("Player").GetComponent<PlayerMovement>();
         }
         if(_spawnPlayer == null) {
-            _spawnPlayer = GameObject.Find("Player").GetComponent<SpawnPlayer>();
+            _spawnPlayer = GameObject.FindWithTag("Player").GetComponent<SpawnPlayer>();
         }
     }
 
