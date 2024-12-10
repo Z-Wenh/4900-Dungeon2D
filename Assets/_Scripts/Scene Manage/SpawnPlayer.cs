@@ -14,6 +14,5 @@ public class SpawnPlayer : MonoBehaviour {
     public void SpawnPlayerPosition() {
         _spawnPoint = GameObject.Find("SpawnPoint").GetComponent<Transform>();
         gameObject.transform.position = _spawnPoint.transform.position;
-        Debug.Log("Position is set");
     }
 }

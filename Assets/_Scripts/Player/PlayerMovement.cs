@@ -7,7 +7,6 @@ public class PlayerMovement : MonoBehaviour {
     [SerializeField] private Transform _movePoint;
     [SerializeField] private LayerMask _obstacleMask;
     [SerializeField] private Animator _myAnimator;
-    [SerializeField] private Rigidbody2D _myRigidBody;
 
     [SerializeField] private bool _isFacingRight;
     private bool _canMove;
@@ -15,9 +14,6 @@ public class PlayerMovement : MonoBehaviour {
     void Awake() {
         if (_myAnimator == null) {
             _myAnimator = GetComponent<Animator>();
-        }
-        if(_myRigidBody == null) {
-            _myRigidBody = GetComponent<Rigidbody2D>();
         }
     }
 

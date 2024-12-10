@@ -30,7 +30,6 @@ public class SceneController : MonoBehaviour {
 
     public void LoadEndScreen() {
         SceneManager.LoadScene("EndScreen");
-        //SetActive(false) all the objects that are in dont destroy.
     }
 
     public void WinningScreen() {
@@ -39,6 +38,9 @@ public class SceneController : MonoBehaviour {
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
+        if(scene.buildIndex == 0) {
+            return;
+        }
         if(scene.buildIndex == 10 || scene.buildIndex == 11) {
             GameObject _playerObject = GameObject.FindWithTag("Player");
             GameObject _playerUI = GameObject.Find("PlayerUI");

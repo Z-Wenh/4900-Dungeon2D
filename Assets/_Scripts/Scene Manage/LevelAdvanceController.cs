@@ -15,6 +15,7 @@ public class LevelAdvanceController : MonoBehaviour {
         if(_nextLevelCanvas == null) {
             _nextLevelCanvas = gameObject.GetComponent<Canvas>();
         }
+        
 
         _nextLevelCanvas.enabled = false;
     }

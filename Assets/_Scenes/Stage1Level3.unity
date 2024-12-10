@@ -1045,6 +1045,7 @@ GameObject:
   m_Component:
   - component: {fileID: 477948769}
   - component: {fileID: 477948768}
+  - component: {fileID: 477948770}
   m_Layer: 0
   m_Name: SceneController
   m_TagString: Untagged
@@ -1064,8 +1065,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c532d3fad5bfe6c47ad9913e5b7bb286, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerMovement: {fileID: 0}
-  _spawnPlayer: {fileID: 0}
+  _playerMovement: {fileID: 7550291182665027443}
+  _spawnPlayer: {fileID: 7550291182665027444}
 --- !u!4 &477948769
 Transform:
   m_ObjectHideFlags: 0
@@ -1081,6 +1082,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &477948770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 477948767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 115e1c794fc2e2a4ba62019a4014d352, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _objectIndex: 5
 --- !u!4 &506954298 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3288694776526042640, guid: 9417804ea95cebf45a6a143cca82bc37, type: 3}
@@ -1222,11 +1236,6 @@ MonoBehaviour:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2319619047153558792, guid: 06ba5aa75ca8d384ab29c19da217df4f, type: 3}
   m_PrefabInstance: {fileID: 4065156626856720409}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &657980141 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2353054968388214466, guid: 5d009f4d2e46fb2468fcb55a11e1575a, type: 3}
-  m_PrefabInstance: {fileID: 3034301538372288222}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &674869144 stripped
 GameObject:
@@ -5967,7 +5976,7 @@ PrefabInstance:
     - target: {fileID: 1659755350195489520, guid: 300c5f3e4717b5a4a8a1a2ee2f48c6bd, type: 3}
       propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 7550291182665027444}
+      objectReference: {fileID: 0}
     - target: {fileID: 1659755350195489520, guid: 300c5f3e4717b5a4a8a1a2ee2f48c6bd, type: 3}
       propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
@@ -6827,10 +6836,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 838888483953860166, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
-      propertyPath: _spawnPoint
-      value: 
-      objectReference: {fileID: 657980141}
     - target: {fileID: 1394263477378242275, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.5
@@ -6883,18 +6888,10 @@ PrefabInstance:
       propertyPath: OnDied.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 477948768}
-    - target: {fileID: 1923021031182943461, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
-      propertyPath: OnDied.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadSceneAsync
-      objectReference: {fileID: 0}
     - target: {fileID: 2273183732166728287, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
       propertyPath: experienceController
       value: 
       objectReference: {fileID: 1978276868}
-    - target: {fileID: 7367559415588362441, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
-      propertyPath: _spawnPoint
-      value: 
-      objectReference: {fileID: 657980141}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6918,7 +6915,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!114 &7550291182665027444 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7367559415588362441, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
+  m_CorrespondingSourceObject: {fileID: 196421601927545533, guid: 9db14f6a0ffff4c449741f28161b6dd6, type: 3}
   m_PrefabInstance: {fileID: 7550291182665027441}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 674869144}
